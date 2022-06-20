@@ -33,6 +33,10 @@ export default {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
+        name: "google-site-verification",
+        content: "L6CIHWX38cm1gLthoxa4mWPpp_l6UGCrtyRe5ZNeKB0",
+      },
+      {
         hid: "description",
         name: "description",
         content:
