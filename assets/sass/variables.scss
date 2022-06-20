@@ -1,0 +1,21 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+
+@import url("https://fonts.googleapis.com/css?family=Helvetica&display=swap");
+@import "~vuetify/src/styles/styles.sass";
+
+/* These are Vuetify SASS variables, modified as needed here */
+
+$body-font-family: "Helvetica" !important;
+$line-height-root: 1.2;
+//$font-size-root: 20px;
+
+/* These variables are NOT linked to Vuetify SASS */
+
+$clear: white;
+$scroll: grey;
+
+$text-color: #afafaf;
+$success-light: rgba(50, 205, 50, 1);
+$warning-light: rgba(255, 255, 0, 0.7);
+$error-light: rgba(255, 50, 0, 0.9);
+$secondary-color-light: rgba(150, 30, 150, 0);

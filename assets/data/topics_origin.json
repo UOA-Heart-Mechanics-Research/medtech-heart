@@ -1,0 +1,204 @@
+{
+  "model": {
+    "title": "Home",
+    "heading": "Te Manawa",
+    "icon": "mdi-home",
+    "subTopics": {
+      "heart": {
+        "title": "Heart",
+        "heading": "The Heart",
+        "icon": "mdi-home-heart",
+        "dataFile": "heart-main",
+        "category": "success",
+        "subTitle": "subSuccess",
+        "ecg": {
+          "name": "Normal",
+          "path": "ECG/NormalECG.json",
+          "description": "electrical pulses make the heart muscle contract"
+        },
+        "lvp": {
+          "name": "Normal",
+          "path": "LVP/NormalLVP.json",
+          "description": "muscle contraction generates pump pressure"
+        },
+        "model": { "name": "NoInfarct" }
+      }
+    }
+  },
+  "attack": {
+    "title": "Attack",
+    "heading": "Heart Attack",
+    "icon": "mdi-heart-broken",
+    "subTopics": {
+      "healthy": {
+        "title": "Healthy",
+        "heading": "Coronary Arteries",
+        "icon": "img/a_h.png",
+        "dataFile": "attack-healthy",
+        "category": "success",
+        "subTitle": "subSuccess",
+        "ecg": {
+          "name": "NoInfarct",
+          "path": "ECG/NormalECG.json",
+          "description": "electrical pulses make the heart muscle contract"
+        },
+        "lvp": {
+          "name": "NoInfarct",
+          "path": "LVP/NormalLVP.json",
+          "description": "muscle contraction generates pump pressure"
+        },
+        "model": { "name": "NoInfarct" }
+      },
+      "minor": {
+        "slug": "minor",
+        "title": "Minor",
+        "heading": "Minor",
+        "icon": "img/a_m.png",
+        "dataFile": "attack-minor",
+        "category": "warning",
+        "subTitle": "subWarning",
+        "ecg": {
+          "name": "SmallInfarct",
+          "path": "ECG/MildInfarctECG_shifted.json",
+          "description": "minor heart tissue damage can show up as subtle changes to the ECG"
+        },
+        "lvp": {
+          "name": "SmallInfarct",
+          "path": "LVP/smallInfarctLVP.json",
+          "description": "damaged tissue leads to less contraction force and less pressure"
+        },
+        "model": { "name": "SmallInfarct" }
+      },
+      "severe": {
+        "slug": "severe",
+        "title": "Severe",
+        "heading": "Severe",
+        "icon": "img/a_s.png",
+        "dataFile": "attack-severe",
+        "category": "error",
+        "subTitle": "subError",
+        "ecg": {
+          "name": "LargeInfarct",
+          "path": "ECG/LargeInfarctECG_shifted.json",
+          "description": "severe heart tissue damage can show up as large changes to the ECG"
+        },
+        "lvp": {
+          "name": "LargeInfarct",
+          "path": "LVP/largeInfarctLVP_shifted.json",
+          "description": "damaged tissue leads to less contraction force and less pressure"
+        },
+        "model": { "name": "LargeInfarct" }
+      }
+    }
+  },
+  "electricity": {
+    "title": "Electricity",
+    "heading": "Heart Electricity",
+    "icon": "mdi-lightning-bolt",
+    "subTopics": {
+      "healthy": {
+        "title": "Healthy",
+        "heading": "Electrocardiograms",
+        "icon": "img/e_h.png",
+        "dataFile": "electricity-healthy",
+        "category": "success",
+        "subTitle": "subSuccess",
+        "ecg": {
+          "name": "NormalElectricity",
+          "path": "ECG/NormalECG.json",
+          "description": "electrical pulses make the heart muscle contract"
+        },
+        "lvp": {
+          "name": "NormalElectricity",
+          "path": "LVP/NormalLVP.json",
+          "description": "muscle contraction generates pump pressure"
+        },
+        "model": { "name": "NormalElectricity" }
+      },
+      "fibrillation": {
+        "slug": "fibrillation",
+        "title": "Fibrillation",
+        "heading": "Fibrillation",
+        "icon": "img/e_f.png",
+        "dataFile": "electricity-fibrillation",
+        "category": "error",
+        "subTitle": "subError",
+        "ecg": {
+          "name": "Arrhythmia",
+          "path": "ECG/ArrhythmiaECG.json",
+          "description": "abnormal electricity"
+        },
+        "lvp": {
+          "name": "Arrhythmia",
+          "path": "LVP/ArrhythmiaLVP.json",
+          "description": "poor pump pressure"
+        },
+        "model": { "name": "ArrythmiaElectricity" }
+      }
+    }
+  },
+  "failure": {
+    "title": "Failure",
+    "heading": "Heart Failure",
+    "icon": "mdi-heart-off",
+    "subTopics": {
+      "healthy": {
+        "title": "Healthy",
+        "heading": "Chronic Problems",
+        "icon": "img/f_h.png",
+        "dataFile": "failure-healthy",
+        "category": "success",
+        "subTitle": "subSuccess",
+        "ecg": {
+          "name": "NoFailure",
+          "path": "ECG/NormalECG.json",
+          "description": "electrical pulses make the heart muscle contract"
+        },
+        "lvp": {
+          "name": "NoFailure",
+          "path": "LVP/NormalLVP.json",
+          "description": "muscle contraction generates pump pressure"
+        },
+        "model": { "name": "NoInfarct" }
+      },
+      "compensated": {
+        "title": "Compensated",
+        "heading": "Compensated",
+        "icon": "img/f_c.png",
+        "dataFile": "failure-compensated",
+        "category": "warning",
+        "subTitle": "subWarning",
+        "ecg": {
+          "name": "CompensatedFailure",
+          "path": "ECG/DiastolicECG_shifted.json",
+          "description": "electrical pulses make the heart muscle contract"
+        },
+        "lvp": {
+          "name": "CompensatedFailure",
+          "path": "LVP/DiastolicLVP_shifted.json",
+          "description": "muscle contraction generates pump pressure"
+        },
+        "model": { "name": "CompensatedFailure" }
+      },
+      "decompensated": {
+        "title": "Decompensated",
+        "heading": "Decompensated",
+        "icon": "img/f_d.png",
+        "dataFile": "failure-decompensated",
+        "category": "error",
+        "subTitle": "subError",
+        "ecg": {
+          "name": "DecompensatedFailure",
+          "path": "ECG/SystolicECG_shifted.json",
+          "description": "electrical pulses make the heart muscle contract"
+        },
+        "lvp": {
+          "name": "DecompensatedFailure",
+          "path": "LVP/SystolicLVP_shifted.json",
+          "description": "thin-walled hearts struggle to maintain pump pressure"
+        },
+        "model": { "name": "DecompensatedFailure" }
+      }
+    }
+  }
+}

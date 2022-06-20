@@ -1,0 +1,69 @@
+canvas {
+  width: 100%;
+  height: 100%;
+}
+.flexbox {
+  display: flex;
+  &.--vertical {
+    flex-direction: column;
+  }
+}
+
+.full-height {
+  //height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.auto-height {
+  height: auto;
+}
+
+.container-default {
+  padding: 1.5rem 0.5rem 0.2rem 1.5rem;
+  @media #{map-get($display-breakpoints, 'sm-and-down')} {
+    padding: 0.5rem;
+  }
+}
+
+.main-heading {
+  margin: 0;
+  font-size: 2rem;
+  @media #{map-get($display-breakpoints, 'xs-only')} {
+    font-size: 1.8rem;
+  }
+  @media #{map-get($display-breakpoints, 'xl-only')} {
+    font-size: 2.4rem;
+  }
+}
+
+.sub-heading {
+  margin: 0;
+  font-size: 1.2rem;
+  @media #{map-get($display-breakpoints, 'xl-only')} {
+    font-size: 1.6rem;
+  }
+}
+
+.error-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 3rem;
+}
+
+//Custom Scrollbar - For Webkit browsers
+::-webkit-scrollbar {
+  width: 3px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: inherit; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid transparent; /* creates padding around scroll thumb */
+}

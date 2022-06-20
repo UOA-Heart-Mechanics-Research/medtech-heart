@@ -1,0 +1,88 @@
+@import "@/assets/sass/_mixins.scss";
+
+.bg-success {
+  @include gradient-bg(var(--v-success-base), $success-light);
+}
+
+.bg-warning {
+  @include gradient-bg(var(--v-warning-base), $warning-light);
+}
+
+.bg-error {
+  @include gradient-bg(var(--v-error-base), $error-light);
+}
+
+.bg-secondary {
+  @include gradient-bg($secondary-color-light, var(--v-secondary-base));
+}
+
+.left-pane {
+  position: relative;
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-around;
+  align-items: center;
+}
+.md-notice {
+  font-style: italic;
+  font-size: 13px;
+}
+.md-video {
+  cursor: pointer;
+}
+.topic-img {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-around;
+  align-items: center;
+}
+.topic-img-big {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.topic-fibrillation-aed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-logo {
+  position: absolute;
+  width: 8rem;
+  top: 2px;
+  right: 6px;
+  z-index: 999;
+  height: auto;
+  @media #{map-get($display-breakpoints, 'xs-only')} {
+    width: 7rem;
+  }
+}
+
+/* These following two styles are used in .md files */
+
+.video-icon {
+  height: 75px;
+  width: 70px;
+  @media #{map-get($display-breakpoints, 'xl-only')} {
+    height: 85px;
+    width: 80px;
+  }
+}
+
+.video-icon-tall {
+  height: 85px;
+  width: 70px;
+  @media #{map-get($display-breakpoints, 'xl-only')} {
+    height: 95px;
+    width: 80px;
+  }
+}
+img {
+  margin: 0;
+}

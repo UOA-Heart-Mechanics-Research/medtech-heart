@@ -1,0 +1,66 @@
+.video-player {
+  row-gap: 1rem;
+  // position: relative;
+
+  width: 100vw;
+
+  background-color: black;
+}
+
+#outer-credits {
+  // padding-bottom: 1px;
+  position: fixed;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  // background-color: aqua;
+  bottom: 0px;
+}
+
+.display-video {
+  display: block;
+  margin-top: 0;
+  width: 100%;
+  flex-grow: 1;
+  &.--sm {
+    height: 30rem;
+  }
+  &.--xs {
+    height: 20rem;
+  }
+}
+
+.credits {
+  width: 100vw;
+  padding-left: 10px;
+  padding-right: 30px;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.credit-button {
+  flex-grow: 1;
+  row-gap: 0.5rem;
+  align-items: center;
+}
+
+.button {
+  width: 90%;
+  max-width: 20rem;
+}
+
+.img-icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+.annie-liz {
+  padding: 2px;
+  text-align: center;
+  justify-content: center;
+  span {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: $text-color;
+  }
+}

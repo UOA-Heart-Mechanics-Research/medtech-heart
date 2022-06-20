@@ -1,0 +1,36 @@
+{
+ "healthy":{
+    "heading":"View of a Healthy Heart", 
+    "link":"videos/1_healthy_heart.mp4"    
+  },
+
+  "blocked":{
+    "heading":"View of a Healthy Heart", 
+    "link":"videos/2_blocked_arteries.mp4"
+  },
+  
+  "exercise":{
+    "heading":"Lifestyle Factors: Exercise",
+    "link":"videos/5_exercise_v2.mp4"
+  },
+
+  "diet":{
+    "heading":"Lifestyle Factors: Diet",
+    "link":"videos/6_diet_v2.mp4"
+  },
+
+  "smoking":{
+    "heading":"Lifestyle Factors: Smoking",
+    "link":"videos/7_smoking_v2.mp4"
+  },
+
+  "statin":{
+    "heading":"How your static medication will help?",
+    "link":"videos/3_Statins.mp4"
+  },
+
+  "aspirin":{
+    "heading":"How your aspirin medication will help?",
+    "link":"videos/4_aspirin.mp4"
+  }
+}
