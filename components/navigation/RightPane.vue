@@ -68,6 +68,7 @@ export default {
   width: 100%;
   max-height: 20%;
   .heart-rate {
+    margin-top: 10px;
     width: 60%;
     height: 100px;
   }
