@@ -45,15 +45,18 @@ export default {
       select: "",
       currentPanel: "",
       fileFound: false,
-      items: ["version 2.0", "version 1.0"],
+      items: ["latest", "version 2.0", "version 1.0"],
     };
   },
 
   methods: {
     onselectChange(select) {
+      if (select === "latest")
+        window.location.href =
+          "https://abi-web-apps.github.io/medtech-heart/latest/";
       if (select === "version 2.0")
         window.location.href =
-          " https://abi-web-apps.github.io/medtech-heart-vue/";
+          "https://abi-web-apps.github.io/medtech-heart/v2/";
       if (select === "version 1.0")
         window.location.href =
           "https://sites.bioeng.auckland.ac.nz/medtech/heart/";

@@ -2571,6 +2571,19 @@ cookie@^0.3.1:
   resolved "https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz"
   integrity sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
 
+copper3d_plugin_heart_k@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.npmjs.org/copper3d_plugin_heart_k/-/copper3d_plugin_heart_k-1.0.14.tgz"
+  integrity sha512-SGujw/TgjjGQnitykUQpesrpfOlUPKLhxnFXRWmFjJRtpelk16yek7eBEXYG5xr293enO48Fjbn2F+eFLPDNGA==
+  dependencies:
+    copper3d_plugin_heartjs_config "^1.0.7"
+    jsfft "0.0.4"
+
+copper3d_plugin_heartjs_config@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/copper3d_plugin_heartjs_config/-/copper3d_plugin_heartjs_config-1.0.7.tgz"
+  integrity sha512-rWhe19DQjC7Ap96uPKmQNy+IBihXTHelAowr5VdgHee+LDTLTLJ75IHsbBxi5ls1LHMxsXhGmWmT3Oy+pgva+Q==
+
 copy-concurrently@^1.0.0:
   version "1.0.5"
   resolved "https://registry.npmjs.org/copy-concurrently/-/copy-concurrently-1.0.5.tgz"
@@ -3754,13 +3767,14 @@ glsl-noise@0.0.0:
   resolved "https://registry.npmjs.org/glsl-noise/-/glsl-noise-0.0.0.tgz"
   integrity sha512-b/ZCF6amfAUb7dJM/MxRs7AetQEahYzJ8PtgfrmEdtw6uyGOr+ZSGtgjFm6mfsBkxJ4d2W7kg+Nlqzqvn3Bc0w==
 
-gltfloader-plugin-test@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.npmjs.org/gltfloader-plugin-test/-/gltfloader-plugin-test-1.8.1.tgz"
-  integrity sha512-JDyjWbSUBLyxyclw8uLI+InwICx4aiBpOF0MINrgdO08NBn9SnHRZRKmsXIgSktNm3Fn9K4MPoQV+helVhs6Hw==
+gltfloader-plugin-test@^1.8.10:
+  version "1.8.10"
+  resolved "https://registry.npmjs.org/gltfloader-plugin-test/-/gltfloader-plugin-test-1.8.10.tgz"
+  integrity sha512-Qy2yK2BWf1bQ3eLF5vtyY4FYBhsB4JW9lHno/H/VKYDd5JfgWuE3PhlJIZ4GIfgyCjC6qXU8Y56lT/Ke4So5vg==
   dependencies:
     "@types/dat.gui" "^0.7.7"
     "@types/three" "^0.140.0"
+    copper3d_plugin_heart_k "^1.0.14"
     dat.gui "^0.7.9"
     glsl-blend-soft-light "^1.0.5"
     glsl-film-grain "^1.0.4"
@@ -4502,6 +4516,11 @@ jsesc@~0.5.0:
   version "0.5.0"
   resolved "https://registry.npmjs.org/jsesc/-/jsesc-0.5.0.tgz"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
+
+jsfft@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npmjs.org/jsfft/-/jsfft-0.0.4.tgz"
+  integrity sha512-INIqKIPQSwN63QcUNzj8Tkf/Vlzf+GohQXUxt41xNxnQFczPB3gCzfZEg9jzBodRpaaIUpdea2Eu5D3CpsF3FQ==
 
 json-parse-better-errors@^1.0.1, json-parse-better-errors@^1.0.2:
   version "1.0.2"

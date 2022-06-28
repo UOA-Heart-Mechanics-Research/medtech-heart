@@ -1,0 +1,1 @@
+__NUXT_JSONP__("manifest.js", {routes:["\u002Fattack-severe","\u002Fattack-minor","\u002Felectricity-healthy","\u002Ffailure-compensated","\u002Felectricity-fibrillation","\u002Ffailure-healthy","\u002Fmodel-heart","\u002Ffailure-decompensated","\u002Fvideo","\u002Fabout","\u002Fmodel-heart#video-div","\u002Fattack-healthy"]})

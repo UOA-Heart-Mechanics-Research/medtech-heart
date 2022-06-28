@@ -17,6 +17,78 @@
  * Released under the MIT License.
  */
 
+/*! ./HeartRateProcessor */
+
+/*! ./SerialDecoder */
+
+/*! ./SerialHeartRateDecoder */
+
+/*! ./SerialHexValue */
+
+/*! ./SerialRawValue */
+
+/*! ./SerialReader */
+
+/*! ./SerialUtil */
+
+/*! ./complex_array */
+
+/*! ./kiwrious/service/serial/SerialService */
+
+/*! copper3d_plugin_heartjs_config */
+
+/*! jsfft */
+
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
+/*!********************!*\
+      !*** ./ts/main.ts ***!
+      \********************/
+
+/*!****************************************!*\
+      !*** ./node_modules/jsfft/dist/fft.js ***!
+      \****************************************/
+
+/*!**************************************************!*\
+      !*** ./node_modules/jsfft/dist/complex_array.js ***!
+      \**************************************************/
+
+/*!**************************************************!*\
+      !*** ./ts/kiwrious/service/serial/SerialUtil.ts ***!
+      \**************************************************/
+
+/*!****************************************************!*\
+      !*** ./ts/kiwrious/service/serial/SerialReader.ts ***!
+      \****************************************************/
+
+/*!*****************************************************!*\
+      !*** ./ts/kiwrious/service/serial/SerialDecoder.ts ***!
+      \*****************************************************/
+
+/*!*****************************************************!*\
+      !*** ./ts/kiwrious/service/serial/SerialService.ts ***!
+      \*****************************************************/
+
+/*!******************************************************!*\
+      !*** ./ts/kiwrious/service/serial/SerialHexValue.ts ***!
+      \******************************************************/
+
+/*!******************************************************!*\
+      !*** ./ts/kiwrious/service/serial/SerialRawValue.ts ***!
+      \******************************************************/
+
+/*!**********************************************************!*\
+      !*** ./ts/kiwrious/service/serial/HeartRateProcessor.ts ***!
+      \**********************************************************/
+
+/*!**************************************************************!*\
+      !*** ./ts/kiwrious/service/serial/SerialHeartRateDecoder.ts ***!
+      \**************************************************************/
+
+/*!********************************************************************************************!*\
+      !*** ./node_modules/copper3d_plugin_heartjs_config/dist/copper3d_plugin_heartjs_config.js ***!
+      \********************************************************************************************/
+
 /**
      * @license
      * Copyright 2010-2022 Three.js Authors
