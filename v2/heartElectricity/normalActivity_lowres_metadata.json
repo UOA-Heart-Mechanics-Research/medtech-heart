@@ -1,0 +1,18 @@
+[
+   {
+      "GroupName" : "Post",
+      "MorphColours" : true,
+      "MorphNormals" : false,
+      "MorphVertices" : true,
+      "Type" : "Surfaces",
+      "URL" : "heartElectricity/normalActivity_lowres_1.json"
+   },
+   {
+      "GroupName" : "Ant",
+      "MorphColours" : true,
+      "MorphNormals" : false,
+      "MorphVertices" : true,
+      "Type" : "Surfaces",
+      "URL" : "heartElectricity/normalActivity_lowres_2.json"
+   }
+]
