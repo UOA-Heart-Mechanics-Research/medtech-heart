@@ -16,7 +16,7 @@
       class="pt-2 pt-xl-4 marked"
       v-html="markedText"
     ></div>
-    <div v-if="$parentTopic().heading === 'Te Manawa'">
+    <!-- <div v-if="$parentTopic().heading === 'Te Manawa'">
       <v-select
         v-model="select"
         :items="items"
@@ -27,7 +27,7 @@
         height="20px"
         @change="onselectChange(select)"
       ></v-select>
-    </div>
+    </div> -->
     <div v-if="!fileFound" class="error-message">
       <span>Data Not Found</span>
     </div>
@@ -50,17 +50,17 @@ export default {
   },
 
   methods: {
-    onselectChange(select) {
-      // if (select === "latest")
-      //   window.location.href =
-      //     "https://uoa-heart-mechanics-research.github.io/medtech-heart/latest/";
-      if (select === "version 2.0")
-        window.location.href =
-          "https://uoa-heart-mechanics-research.github.io/medtech-heart/v2/";
-      if (select === "version 1.0")
-        window.location.href =
-          "https://sites.bioeng.auckland.ac.nz/medtech/heart/";
-    },
+    // onselectChange(select) {
+    //   // if (select === "latest")
+    //   //   window.location.href =
+    //   //     "https://uoa-heart-mechanics-research.github.io/medtech-heart/latest/";
+    //   if (select === "version 2.0")
+    //     window.location.href =
+    //       "https://uoa-heart-mechanics-research.github.io/medtech-heart/v2/";
+    //   if (select === "version 1.0")
+    //     window.location.href =
+    //       "https://sites.bioeng.auckland.ac.nz/medtech/heart/";
+    // },
     play: function (event) {
       // /model-heart#video-div
       const routeStr = this.$nuxt.$route.path;

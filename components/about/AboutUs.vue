@@ -23,20 +23,32 @@
         about this app.
       </div>
 
-      <div class="mx-auto contributor lg:-mt-16" max-width="344">
-        <v-card-text>
-          <div class="text-h6 text--darken-6">Website Design</div>
-          <div class="text--darken-4 pl-6">
-            Dr Thiranja Prasad Babarenda Gamage <br />
-            Prof Martyn Nash <br />
-            Richard Christie <br />
-            Chinchien Lin <br />
-            Zhinuo Wang <br />
-            Linkun Gao <br />
-            Alan Wu <br />
-            Riffat<br />
-          </div>
-        </v-card-text>
+      <div>
+        <div class="mx-auto contributor lg:-mt-16" max-width="344">
+          <v-card-text>
+            <div class="text-h6 text--darken-6">Website Developers</div>
+            <div class="text--darken-4 pl-6">
+              Linkun Gao <br />
+              Riffat Nourin<br />
+              Alan Wu <br />
+              Dr Thiranja Prasad Babarenda Gamage <br />
+              Prof Martyn Nash <br />
+              Richard Christie <br />
+              Chinchien Lin <br />
+              Zhinuo Wang <br />
+            </div>
+          </v-card-text>
+        </div>
+        <v-select
+          v-model="select"
+          :items="items"
+          class="select"
+          label="Switch versions"
+          dense
+          color="#fff"
+          height="20px"
+          @change="onselectChange(select)"
+        ></v-select>
       </div>
     </div>
   </div>
@@ -50,6 +62,8 @@ export default {
     return {
       teamSelected: false,
       researchSelected: true,
+      select: "",
+      items: ["latest", "version 2.0", "version 1.0"],
     };
   },
 
@@ -58,6 +72,17 @@ export default {
       this.teamSelected = !this.teamSelected;
       this.researchSelected = !this.researchSelected;
       $nuxt.$emit("about-navigation", componentName);
+    },
+    onselectChange(select) {
+      // if (select === "latest")
+      //   window.location.href =
+      //     "https://uoa-heart-mechanics-research.github.io/medtech-heart/latest/";
+      if (select === "version 2.0")
+        window.location.href =
+          "https://uoa-heart-mechanics-research.github.io/medtech-heart/v2/";
+      if (select === "version 1.0")
+        window.location.href =
+          "https://sites.bioeng.auckland.ac.nz/medtech/heart/";
     },
   },
 };
@@ -107,5 +132,15 @@ export default {
   a {
     color: yellow;
   }
+}
+.select {
+  width: 127px;
+}
+.v-input__slot {
+  background: #fff;
+}
+.theme--dark.v-list {
+  // v-secondary-base
+  background: rgba(150, 30, 150, 0.5);
 }
 </style>

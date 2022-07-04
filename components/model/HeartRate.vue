@@ -48,7 +48,7 @@
 export default {
   name: "HeartRate",
   Copper: null,
-  isConnect: false,
+  isConnected: false,
   kiwriousContainer: null,
   kiwriousValue: null,
   count: 0,
@@ -60,6 +60,7 @@ export default {
   },
   mounted() {
     this.beat = this.$heartBeat();
+    this.isConnected = false;
     this.kiwriousContainer = this.$refs.kiwrious;
     this.kiwriousValue = this.$refs.kiwriousValue;
     this.Copper = this.$Copper();
@@ -75,6 +76,9 @@ export default {
       this.Copper.kiwrious.setWasm("kiwrious-config/libunicorn.out.wasm");
       this.Copper.kiwrious.serialService.onSerialConnection = (isConnected) => {
         this.isConnected = isConnected;
+        if (!isConnected) {
+          this.kiwriousValue.innerText = "beats per minute";
+        }
       };
       this.kiwriousContainer.onclick = async () => {
         this.isConnected
@@ -98,7 +102,7 @@ export default {
           } else {
             this.kiwriousValue.innerText =
               "Your heartrate is: " + hrVal.toString();
-            if (this.count >= 10) {
+            if (this.count >= 3) {
               const normalHrVal = hrVal * (5000 / 160);
               this.beat = normalHrVal;
               this.count = 0;
@@ -118,7 +122,15 @@ export default {
         $nuxt.$emit("beat-update-onTime", 0);
       }
     },
+    isConnected: (connected) => {
+      if (!connected) {
+        this.kiwriousValue.innerText = "beats per minute";
+      } else {
+        this.kiwriousValue.innerText = "hello";
+      }
+    },
   },
+
   created() {
     this.$nuxt.$on("beat-reset", (currentBeat) => {
       this.beat = currentBeat;

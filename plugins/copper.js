@@ -15,8 +15,6 @@ const baseRenderer = new Copper.copperRenderer(container, {
 baseRenderer.gui.closed = true;
 baseRenderer.animate();
 
-console.log(Copper.kiwrious.serialService)
-
 export default (context, inject) => {
   inject("baseRenderer", () => {
     return baseRenderer;
