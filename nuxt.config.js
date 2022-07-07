@@ -18,7 +18,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     //titleTemplate: '%s - medtech-heart-vue',
-    title: "MedTechHeart",
+    title: "MedTech Heart",
     htmlAttrs: {
       lang: "en",
     },

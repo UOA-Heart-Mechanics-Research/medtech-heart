@@ -19,8 +19,12 @@
         </div>
       </div>
       <div class="feedback font-weight-medium text--primary lg:-mt-16">
-        Visit our <a href="#">Online form</a> to give us your valuable feedback
-        about this app.
+        Visit our
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScsab93B7uPg389gxCNfCSgG4sMNIFk_mxDFTFF_-UC2TcSJQ/viewform?usp=sf_link"
+          >Online form</a
+        >
+        to give us your valuable feedback about this app.
       </div>
 
       <div>
@@ -63,7 +67,7 @@ export default {
       teamSelected: false,
       researchSelected: true,
       select: "",
-      items: ["latest", "version 2.0", "version 1.0"],
+      items: ["latest", "version 2.0", "version 1.0", "debug"],
     };
   },
 
@@ -77,6 +81,9 @@ export default {
       // if (select === "latest")
       //   window.location.href =
       //     "https://uoa-heart-mechanics-research.github.io/medtech-heart/latest/";
+      if (select === "debug")
+        window.location.href =
+          "https://uoa-heart-mechanics-research.github.io/medtech-heart/debug/";
       if (select === "version 2.0")
         window.location.href =
           "https://uoa-heart-mechanics-research.github.io/medtech-heart/v2/";

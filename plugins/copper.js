@@ -6,13 +6,14 @@ container.style.width = "100vw";
 container.style.height = "100vh";
 container.style.margin = 0;
 container.style.padding = 0;
+const guiOpen = false;
 const baseRenderer = new Copper.copperRenderer(container, {
-  guiOpen: true,
+  guiOpen,
   camera: true,
   performance: true,
   light: true,
 });
-baseRenderer.gui.closed = true;
+if (guiOpen) baseRenderer.gui.closed = true;
 baseRenderer.animate();
 
 export default (context, inject) => {
