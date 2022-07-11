@@ -84,6 +84,7 @@ export default {
     "@/plugins/current-content",
     "@/plugins/models",
     { src: "~/plugins/copper.js", ssr: false },
+    { src: "~plugins/ga.js", mode: "client" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
