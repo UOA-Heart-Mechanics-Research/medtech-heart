@@ -261,6 +261,7 @@ export default {
       this.showHalf();
     },
     showHalf(sceneObj) {
+      console.log("hala");
       let scene;
       if (sceneObj) {
         scene = sceneObj;
@@ -272,11 +273,21 @@ export default {
           child.name === "Post_top" ||
           child.name === "Post_inner" ||
           child.name === "Post_NonInfarct" ||
+          child.name === "Post_top_1" ||
+          child.name === "Post_inner_1" ||
+          child.name === "Post_NonInfarct_1" ||
           child.name === "Post"
         ) {
           scene.updateModelChildrenVisualisation(child);
         }
       });
+      if (this.modelName === "NormalElectricity") {
+        scene.content.traverse((child) => {
+          if (child.name === "Ant" || child.name === "Post") {
+            scene.updateModelChildrenVisualisation(child);
+          }
+        });
+      }
     },
   },
 

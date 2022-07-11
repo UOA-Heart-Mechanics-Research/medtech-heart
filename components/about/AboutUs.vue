@@ -22,6 +22,7 @@
         Visit our
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLScsab93B7uPg389gxCNfCSgG4sMNIFk_mxDFTFF_-UC2TcSJQ/viewform?usp=sf_link"
+          target="view_window"
           >Online form</a
         >
         to give us your valuable feedback about this app.
@@ -67,7 +68,7 @@ export default {
       teamSelected: false,
       researchSelected: true,
       select: "",
-      items: ["latest", "version 2.0", "version 1.0", "debug"],
+      items: ["latest", "version 2.0", "version 1.0"],
     };
   },
 
@@ -81,9 +82,9 @@ export default {
       // if (select === "latest")
       //   window.location.href =
       //     "https://uoa-heart-mechanics-research.github.io/medtech-heart/latest/";
-      if (select === "debug")
-        window.location.href =
-          "https://uoa-heart-mechanics-research.github.io/medtech-heart/debug/";
+      // if (select === "debug")
+      //   window.location.href =
+      //     "https://uoa-heart-mechanics-research.github.io/medtech-heart/debug/";
       if (select === "version 2.0")
         window.location.href =
           "https://uoa-heart-mechanics-research.github.io/medtech-heart/v2/";

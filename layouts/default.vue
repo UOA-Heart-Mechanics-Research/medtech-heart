@@ -71,17 +71,13 @@ export default {
     document.addEventListener("keydown", (e) => {
       if (e.code === "KeyF") {
         Copper.fullScreenListenner(base_background);
-        // const url = this.$route.path;
-        // this.$router.push({
-        //   path: `${url}`,
-        // });
       }
     });
   },
 
   watch: {
     panelHeight: (height) => {
-      console.log(height);
+      // console.log(height);
     },
   },
 
