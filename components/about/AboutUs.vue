@@ -79,9 +79,9 @@ export default {
       $nuxt.$emit("about-navigation", componentName);
     },
     onselectChange(select) {
-      // if (select === "latest")
-      //   window.location.href =
-      //     "https://uoa-heart-mechanics-research.github.io/medtech-heart/latest/";
+      if (select === "latest")
+        window.location.href =
+          "https://uoa-heart-mechanics-research.github.io/medtech-heart/";
       // if (select === "debug")
       //   window.location.href =
       //     "https://uoa-heart-mechanics-research.github.io/medtech-heart/debug/";
