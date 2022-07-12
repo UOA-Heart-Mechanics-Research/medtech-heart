@@ -19,7 +19,7 @@ if (process.client && process.env.NODE_ENV === "production") {
     "ga"
   );
 
-  ga("create", "UA-107203086-3", "auto");
+  ga("create", "UA-107203086-4", "auto");
 }
 
 export default ({ app: { router }, store }) => {

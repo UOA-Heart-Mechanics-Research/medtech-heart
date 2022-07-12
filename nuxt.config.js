@@ -72,6 +72,10 @@ export default {
         type: "text/javascript",
         src: "js/Add3DLabel.js",
       },
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-LXD5LJXP2Y",
+        async: true,
+      },
     ],
   },
 
@@ -85,6 +89,7 @@ export default {
     "@/plugins/models",
     { src: "~/plugins/copper.js", ssr: false },
     { src: "~plugins/ga.js", mode: "client" },
+    { src: "~plugins/ga4.js", mode: "client" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
