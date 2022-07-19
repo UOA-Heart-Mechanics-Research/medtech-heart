@@ -3,13 +3,14 @@
     class="d-flex"
     :class="
       $vuetify.breakpoint.smAndUp || $vuetify.breakpoint.width <= 430
-        ? 'flex-column trace-box'
-        : ''
+        ? 'flex-column trace-box-lg'
+        : 'trace-box-sm'
     "
   >
     <!-- pt-4 pb-1 d-flex flex-column align-center item -->
     <div
       class="mt-4 lg:mt-0 flex flex-col items-center space-y-10 lg:space-y-4"
+      :class="mdAndUp ? 'EGC-lg' : 'EGC-sm'"
     >
       <div
         class="font-weight-bold text-subtitle-2 text-xl-h6 text-sm-subtitle-2 text-md-body-1"
@@ -20,7 +21,7 @@
         id="rightECG"
         ref="rightECG"
         class="w-full"
-        :class="mdAndUp ? 'rightEGC-md' : 'rightEGC-sm'"
+        :class="mdAndUp ? 'rightECG-md' : 'rightECG-sm'"
       ></div>
       <div id="ecgDescription" class="text-caption text-xl-body-2">
         {{ $ecg().description }}
@@ -39,7 +40,7 @@
         id="rightLVP"
         ref="rightLVP"
         class="w-full"
-        :class="mdAndUp ? 'rightEGC-md' : 'rightEGC-sm'"
+        :class="mdAndUp ? 'rightECG-md' : 'rightECG-sm'"
       ></div>
       <div id="lvpDescription" class="text-caption text-xl-body-2">
         {{ $lvp().description }}
@@ -103,15 +104,28 @@ export default {
   width: 90%;
 }
 
-.trace-box,
+.trace-box-lg,
 .item {
   min-width: 280px;
   max-width: 25vw;
 }
-.rightEGC-sm {
+
+.trace-box-sm {
+  width: 80vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.rightECG-sm {
   min-height: 80px;
 }
-.rightEGC-md {
+.rightECG-md {
   min-height: 100px;
+}
+.EGC-lg {
+  height: 30vh;
+}
+.EGC-sm {
+  width: 80vh;
 }
 </style>

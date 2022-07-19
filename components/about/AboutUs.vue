@@ -18,7 +18,7 @@
           <v-btn plain @click="toggleNavigation('team')"> Our Team </v-btn>
         </div>
       </div>
-      <div class="feedback font-weight-medium text--primary lg:-mt-16">
+      <div class="feedback font-weight-medium text--primary">
         Visit our
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLScsab93B7uPg389gxCNfCSgG4sMNIFk_mxDFTFF_-UC2TcSJQ/viewform?usp=sf_link"
@@ -29,7 +29,7 @@
       </div>
 
       <div>
-        <div class="mx-auto contributor lg:-mt-16" max-width="344">
+        <div class="mx-auto contributor" max-width="344">
           <v-card-text>
             <div class="text-h6 text--darken-6">Website Developers</div>
             <div class="text--darken-4 pl-6">
@@ -131,7 +131,7 @@ export default {
   height: 75vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .feedback {

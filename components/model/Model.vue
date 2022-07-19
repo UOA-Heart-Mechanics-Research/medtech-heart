@@ -162,9 +162,28 @@ export default {
 
         this.scene.loadViewUrl(viewURL);
 
+        /**
+         * add special light for heart models
+         * */
+        // if (
+        //   model_name === "ArrythmiaElectricity" ||
+        //   model_name === "NormalElectricity"
+        // ) {
+        //   this.scene.ambientLight.intensity = 2;
+        //   this.scene.ambientLight.color = new this.THREE.Color(0x18ef06);
+        //   this.scene.directionalLight.intensity = 0.6;
+        //   this.scene.directionalLight.color = new this.THREE.Color(0x18ef06);
+        // } else {
+        //   this.scene.ambientLight.intensity = 0.3;
+        //   this.scene.ambientLight.color = new this.THREE.Color(0x18ef06);
+        //   this.scene.directionalLight.intensity = 0.3;
+        //   this.scene.directionalLight.color = new this.THREE.Color(0x18ef06);
+        // }
+
         // this.scene.updateBackground("#33335a", "#1c7258");
         this.scene.updateBackground("#000", "#000");
-        this.Copper.setHDRFilePath("environment/venice_sunset_1k.hdr");
+        // this.Copper.setHDRFilePath("environment/venice_sunset_1k.hdr");
+        this.Copper.setHDRFilePath("environment/footprint_court_2k.hdr");
         this.baseRenderer.updateEnvironment();
         this.addLabel(this.modelName);
       } else {
