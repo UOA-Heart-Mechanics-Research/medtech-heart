@@ -111,9 +111,9 @@ export default {
 }
 
 .trace-box-sm {
-  width: 80vw;
-  display: block;
-  margin: 0 auto;
+  // width: 80vw;
+  // display: block;
+  // margin: 0 auto;
 }
 
 .rightECG-sm {
@@ -126,6 +126,6 @@ export default {
   height: 30vh;
 }
 .EGC-sm {
-  width: 80vh;
+  // width: 80vh;
 }
 </style>
