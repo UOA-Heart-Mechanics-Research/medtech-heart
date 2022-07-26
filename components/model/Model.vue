@@ -1,20 +1,16 @@
 <template>
-  <!-- w-full h-full lg:h-screen -->
   <div class="">
     <div class="flex flex-col justify-center items-center">
-      <!-- w-full h-[400px] -mt-12 lg:h-screen lg:mt-0 -->
       <div
         ref="baseDomObject"
         :class="mdAndUp ? 'baseDom-md' : 'baseDom-sm'"
         @dblclick="onHalfHeartPressed"
       />
-      <!-- lg:fixed lg:bottom-0 lg:h-24 lg:ml-24 w-full h-full flex flex-row justify-center lg:mt-0 order-first lg:order-last -->
       <div
         ref="threeDControls"
         class="baseModelControl"
         :class="mdAndUp ? 'baseModelControl-md' : 'baseModelControl-sm'"
       >
-        <!-- ml-0 h-full w-2/5 lg:w-64 relative -->
         <div class="baseModelCB" :class="mdAndUp ? 'baseModelCB-md' : ''">
           <button
             class="absolute top-0 left-0 w-1/5 h-full hover:bg-gray-50/10"
@@ -161,28 +157,7 @@ export default {
         this.$store.commit("setModelToSceneArray", this.scene);
 
         this.scene.loadViewUrl(viewURL);
-
-        /**
-         * add special light for heart models
-         * */
-        // if (
-        //   model_name === "ArrythmiaElectricity" ||
-        //   model_name === "NormalElectricity"
-        // ) {
-        //   this.scene.ambientLight.intensity = 2;
-        //   this.scene.ambientLight.color = new this.THREE.Color(0x18ef06);
-        //   this.scene.directionalLight.intensity = 0.6;
-        //   this.scene.directionalLight.color = new this.THREE.Color(0x18ef06);
-        // } else {
-        //   this.scene.ambientLight.intensity = 0.3;
-        //   this.scene.ambientLight.color = new this.THREE.Color(0x18ef06);
-        //   this.scene.directionalLight.intensity = 0.3;
-        //   this.scene.directionalLight.color = new this.THREE.Color(0x18ef06);
-        // }
-
-        // this.scene.updateBackground("#33335a", "#1c7258");
         this.scene.updateBackground("#000", "#000");
-        // this.Copper.setHDRFilePath("environment/venice_sunset_1k.hdr");
         this.Copper.setHDRFilePath("environment/footprint_court_2k.hdr");
         this.baseRenderer.updateEnvironment();
         this.addLabel(this.modelName);

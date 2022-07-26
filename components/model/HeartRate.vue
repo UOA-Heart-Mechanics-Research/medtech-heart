@@ -5,14 +5,7 @@
     >
       <div class="pr-2">Heart Rate</div>
       <div class="kiwriousContainer">
-        <!-- <v-tooltip>
-          <template v-slot:activator="{ on, attrs }">
-            
-          </template>
-          <span>Got Kiwirous? Click here!</span>
-        </v-tooltip> -->
         <div class="kiwriousDescription">Got Kiwrious? Click here!</div>
-        <!-- <a title="Got Kiwrious? Click here!"> -->
         <img
           src="~/assets/images/kiwirous.png"
           ref="kiwrious"

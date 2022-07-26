@@ -52,12 +52,6 @@ export default {
     script: [
       {
         "data-dojo-config": "async: 1, dojoBlankHtmlUrl: '/blank.html'",
-        /*"packages":[
-          {
-            'name': 'js',
-            'location':  location.pathname.replace(/\/[^/]+$/, '') + '/js'
-          }
-        ],*/
         src: "//ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js",
       },
       {
@@ -139,11 +133,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    // plugins: [
-    //   new webpack.ProvidePlugin({
-    //     Copper: "gltfloader-plugin-test",
-    //   }),
-    // ],
     extend(config) {
       config.module.rules.push({
         test: /\.md$/i,

@@ -12,7 +12,7 @@
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "engines": {
-    "node": "14.16.0",
+    "node": "16.16.0",
     "npm": "8.5.2"
   },
   "dependencies": {

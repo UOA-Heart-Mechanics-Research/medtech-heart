@@ -1,5 +1,4 @@
 <template>
-  <!-- lg:ml-[450px] -->
   <div :class="mdAndUp ? 'aboutPanel-l' : 'aboutPanel-s'">
     <div
       v-if="section == 'research'"

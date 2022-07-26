@@ -7,7 +7,6 @@
         : 'trace-box-sm'
     "
   >
-    <!-- pt-4 pb-1 d-flex flex-column align-center item -->
     <div
       class="mt-4 lg:mt-0 flex flex-col items-center space-y-10 lg:space-y-4"
       :class="mdAndUp ? 'EGC-lg' : 'EGC-sm'"
@@ -27,7 +26,6 @@
         {{ $ecg().description }}
       </div>
     </div>
-    <!-- <div class="pt-4 pb-1 d-flex flex-column align-center item"> -->
     <div
       class="mt-4 lg:mt-0 flex flex-col items-center space-y-10 lg:space-y-4"
     >
@@ -75,7 +73,6 @@ export default {
     ecgName = null;
     lvpName = null;
     loadChart(this.$ecg(), this.$lvp(), this.$category(), 1.0);
-    // showECGAndLVP(this.$model().name, 0.0);
     this.updateEcg();
   },
   methods: {

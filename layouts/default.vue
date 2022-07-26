@@ -2,13 +2,9 @@
   <v-app ref="base_background">
     <div class="rightPanel">
       <div>
-        <!-- <v-main> -->
-        <!-- class="pa-0 black"
-          :class="mdAndUp ? 'full-height' : 'auto-height'" -->
         <div class="pa-0 black">
           <Nuxt />
         </div>
-        <!-- </v-main> -->
       </div>
     </div>
     <div
@@ -76,9 +72,7 @@ export default {
   },
 
   watch: {
-    panelHeight: (height) => {
-      // console.log(height);
-    },
+    panelHeight: (height) => {},
   },
 
   updated() {
@@ -129,8 +123,6 @@ export default {
   height: calc(100vh - 112px);
 }
 .transparent {
-  // background-color: rgba(255, 255, 255, 0.1) !important;
-
   margin: 0;
   padding: 0;
   opacity: 0.8;

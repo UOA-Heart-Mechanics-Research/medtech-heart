@@ -10,7 +10,6 @@
         <video-player :videoId="currentVideoId" @close-video="closeVideo()" />
       </div>
     </v-overlay>
-    <!-- <video-player :videoId="currentVideoId" @close-video="closeVideo()" /> -->
   </div>
 </template>
 
@@ -42,17 +41,6 @@ export default {
       : "";
     this.showVideo = true;
     this.lastOffset = process.client ? window.pageYOffset : 0;
-  },
-
-  created() {
-    // this.currentVideoId = this.$route.params.videoId
-    //   ? this.$route.params.videoId
-    //   : "";
-    // this.showVideo = true;
-    // this.lastOffset = process.client ? window.pageYOffset : 0;
-    // if (this.currentVideoId) {
-    //   this.$nuxt.$emit("currentVideoIdFn", this.currentVideoId);
-    // }
   },
   beforeDestroy() {
     this.showVideo = false;
