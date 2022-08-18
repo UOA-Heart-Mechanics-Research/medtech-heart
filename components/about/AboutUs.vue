@@ -89,7 +89,8 @@ export default {
         window.location.href =
           "https://uoa-heart-mechanics-research.github.io/medtech-heart/v2/";
       if (select === "version 1.0")
-        window.location.href = "https://abi-web-apps.github.io/MedTechHeart/";
+        window.location.href =
+          "https://uoa-heart-mechanics-research.github.io/medtech-heart/v1/";
     },
   },
 };
