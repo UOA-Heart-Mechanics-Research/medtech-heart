@@ -1,0 +1,58 @@
+[
+   {
+      "GroupName" : "Ant_top",
+      "MorphColours" : false,
+      "MorphNormals" : false,
+      "MorphVertices" : true,
+      "Type" : "Surfaces",
+      "URL" : "heartInfarct/healthy_1.json"
+   },
+   {
+      "GroupName" : "inner",
+      "MorphColours" : false,
+      "MorphNormals" : false,
+      "MorphVertices" : true,
+      "Type" : "Surfaces",
+      "URL" : "heartInfarct/healthy_2.json"
+   },
+   {
+      "GroupName" : "Post_NonInfarct",
+      "MorphColours" : false,
+      "MorphNormals" : false,
+      "MorphVertices" : true,
+      "Type" : "Surfaces",
+      "URL" : "heartInfarct/healthy_3.json"
+   },
+   {
+      "GroupName" : "Post_inner",
+      "MorphColours" : false,
+      "MorphNormals" : false,
+      "MorphVertices" : true,
+      "Type" : "Surfaces",
+      "URL" : "heartInfarct/healthy_4.json"
+   },
+   {
+      "GroupName" : "Ant_NonInfarct",
+      "MorphColours" : false,
+      "MorphNormals" : false,
+      "MorphVertices" : true,
+      "Type" : "Surfaces",
+      "URL" : "heartInfarct/healthy_5.json"
+   },
+   {
+      "GroupName" : "Cut",
+      "MorphColours" : false,
+      "MorphNormals" : false,
+      "MorphVertices" : true,
+      "Type" : "Surfaces",
+      "URL" : "heartInfarct/healthy_6.json"
+   },
+   {
+      "GroupName" : "Post_top",
+      "MorphColours" : false,
+      "MorphNormals" : false,
+      "MorphVertices" : true,
+      "Type" : "Surfaces",
+      "URL" : "heartInfarct/healthy_7.json"
+   }
+]
