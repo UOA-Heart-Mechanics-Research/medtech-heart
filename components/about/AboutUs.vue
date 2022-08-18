@@ -89,8 +89,7 @@ export default {
         window.location.href =
           "https://uoa-heart-mechanics-research.github.io/medtech-heart/v2/";
       if (select === "version 1.0")
-        window.location.href =
-          "https://sites.bioeng.auckland.ac.nz/medtech/heart/";
+        window.location.href = "https://abi-web-apps.github.io/MedTechHeart/";
     },
   },
 };
