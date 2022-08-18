@@ -1,0 +1,1037 @@
+body {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+
+@media screen and (min-height: 960px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-height: 429px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-height: 390px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-height: 362px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-height: 351px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-height: 311px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-height: 240px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+
+div.open {
+	animation: fadein 0.0s;
+	display:block
+}
+
+div.closed {
+	display:none
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1.0;
+    }
+}
+div.slide_open {
+	animation: slide_in 0.8s forwards;
+	display:block
+}
+
+@keyframes slide_in {
+    100% {top: 0%;}
+}
+
+div.slide_closed {
+	animation: slide_out 0.5s forwards;
+	display:block
+}
+
+@keyframes slide_out {
+  from{
+    top: 0%;
+  }
+  to{
+    top: -100%;
+  }
+}
+
+
+
+div#heartpage {
+	background-color:#000000;
+	height:100%;
+	width:100%
+}
+
+div#header {
+	background-color:#000000;
+	z-index:1;
+	top:0%;
+	width:100%;
+	height: 11%;
+	position: absolute;
+}
+
+div#headerTitleHeaderBackround{
+	background-color:#555555;
+	text-align:center;
+	z-index:1;
+	top:0%;
+	width:100%;
+	height: 100%;
+	position: absolute;
+}
+
+div#headerTitleHeaderBackround_electricity{
+	background-color:#4d94ff;
+	text-align:center;
+	z-index:1;
+	top:0%;
+	width:100%;
+	height: 100%;
+	position: absolute;
+}
+
+div#infoButton {
+border-radius: 50%;
+text-align: right;
+position: absolute;
+height:80%;
+width:5%;
+top:10%;
+right:7%;
+margin: auto;
+z-index:10
+}
+
+div#infoButton:hover {
+ background-color:#888888;
+ cursor: pointer;
+ cursor: hand;
+}
+
+div#back, div#more, div#arrhythmia, div#AED, div#home, div.halfHeart, div.showFibres{
+ text-align: left;
+ z-index: 10;
+ margin: auto;
+ position: absolute;
+}
+
+
+div#back {
+ float: left;
+ height:80%;
+ width:5%;
+ max-width:5%;
+ top:10%;
+ left:7%;
+}
+
+div#more {
+ border-radius: 20px;
+ left: 3%;
+ float: left;
+ width: 5%;
+ max-height: 5%;
+ top:75%;
+ vertical-align: middle;
+ text-align: center;
+}
+
+div#more:hover {
+ background-color:#888888;
+ cursor: pointer;
+ cursor: hand;
+}
+
+div#arrhythmia, div#AED{
+ left: 3%;
+ float: left;
+ max-height: 7%;
+ width:7%;
+ top:15%;
+ z-index:10;
+ text-align:center;
+ font-size: 230%;
+}
+
+div.selectedItem {
+	color:rgb(255,255,255);
+}
+
+div#footInformation {
+	text-align:center;
+	background-color:#555555;
+	z-index:1;
+	top:85%;
+	width:100%;
+	height: 15%;
+	position: absolute;
+}
+
+div#footInformation_electricity {
+	text-align:center;
+	background-color:#4d94ff;
+	z-index:1;
+	opacity:0.5;
+	top:85%;
+	width:100%;
+	height: 15%;
+	position: absolute;
+}
+
+div#footECG {
+	background-color:#888888;
+	z-index:3;
+	opacity:1;
+	left:25%;
+	width:30%;
+	height: 100%;
+	position: absolute;
+}
+
+div#footLVP {
+	background-color:#888888;
+	z-index:3;
+	opacity:1;
+	left:60%;
+	width:30%;
+	height: 100%;
+	position: absolute;
+}
+
+div#footHealthStatus {
+	background-color:#888888;
+	z-index:3;
+	opacity:0.5;
+	left:75%;
+	width:20%;
+	height: 100%;
+	position: absolute;
+}
+
+div#myRenderer{
+	text-align:center;
+	z-index:0;
+	left:0%;
+	width:100%;
+	height: 100%;
+	position: absolute;
+}
+
+div#heartElectricity{
+	text-align:center;
+	z-index:0;
+	left:0%;
+	width:100%;
+	height: 100%;
+	position: absolute;
+}
+
+div#circularMenu{
+	text-align:center;
+	-webkit-align-self: center;
+	margin: auto;
+	z-index:2;
+	left:45%;
+	top:25%;
+	width:10%;
+	height: 30%;
+	position: absolute;
+}
+
+div#circularSlider{
+	text-align:center;
+	margin: auto;
+	z-index:0;
+	width: 20%;
+	vertical-align: middle;
+	padding: 100px;
+}
+
+div#footMore {
+	background-color: transparent;
+	z-index:1;
+	width:100%;
+	height:10%;
+	bottom:5%;
+	position: absolute;
+}
+
+div#heartAttackButtonsContainer {
+	background-color:transparent;
+	z-index:1;
+	bottom:7%;
+	width:130%;
+	height: 7%;
+	left: 3%;
+	position: absolute;
+}
+
+div.actionButtons {
+    background-color:transparent;
+ 	text-align:center;
+ 	width:25%;
+ 	top:10%;
+ 	height:80%;
+ 	position: absolute;
+ 	z-index:2;
+ 	font-size: 2.5em;
+}
+
+div.buttonText {
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  top: 25%;
+  width:100%;
+  color:rgb(106,236,8);
+}
+
+div.actionButtons:hover {
+	background-color:#999999;
+	cursor: pointer;
+	cursor: hand;
+}
+
+div#headerInfoText {
+	font-size: 3em;
+	text-align: center;
+  	vertical-align: middle;
+  	position: absolute;
+  	top: 25%;
+  	width:100%;
+  	height:100%;
+}
+
+
+div#SceneButtonsContainer {
+	border-radius: 0% 0% 25px 25px;
+	background-color:#555555;
+	z-index:1;
+	top: 0%;
+	width:70%;
+	height: 7%;
+	left: 15%;
+	position: absolute;
+}
+
+div#halfHeartButton {
+	border-radius: 25px 25px 25px 25px;
+	background-color:#555555;
+	z-index:1;
+	bottom:16%;
+	width:7%;
+	height: 100%;
+	left: 13%;
+	position: absolute;
+}
+
+div#showFibresButton {
+	border-radius: 25px 25px 25px 25px;
+	background-color:#555555;
+	z-index:1;
+	bottom:16%;
+	width:7%;
+	height: 100%;
+	left: 13%;
+	position: absolute;
+}
+
+div#leftPanelGreen {
+  z-index:10;
+  background: -webkit-linear-gradient(rgba(50,205,50,0),rgba(50,205,50,0.6) 82%, rgba(50,205,50,0.6) 93%, rgba(50,205,50,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(50,205,50,0),rgba(50,205,50,0.6) 82%, rgba(50,205,50,0.6) 93%, rgba(50,205,50,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(50,205,50,0),rgba(50,205,50,0.6) 82%, rgba(50,205,50,0.6) 93%, rgba(50,205,50,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(50,205,50,0),rgba(50,205,50,0.6) 82%, rgba(50,205,50,0.6) 93%, rgba(50,205,50,0)); /* Standard syntax */
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  height:95%;
+  width:25%;
+  left:0%;
+  top:0%;
+  position: absolute;
+  z-index:1;
+}
+
+div#leftPanelYellow {
+  z-index:10;
+  background: -webkit-linear-gradient(rgba(255,255,0,0),rgba(255,255,0,0.6) 82%, rgba(255,255,0,0.6) 93%, rgba(255,255,0,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,255,0,0),rgba(255,255,0,0.6) 82%, rgba(255,255,0,0.6) 93%, rgba(255,255,0,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,255,0,0),rgba(255,255,0,0.6) 82%, rgba(255,255,0,0.6) 93%, rgba(255,255,0,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,255,0,0),rgba(255,255,0,0.6) 82%, rgba(255,255,0,0.6) 93%, rgba(255,255,0,0)); /* Standard syntax */
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  height:95%;
+  width:25%;
+  left:0%;
+  top:0%;
+  position: absolute;
+  z-index:1;
+}
+
+div#leftPanelRed {
+  z-index:10;
+  background: -webkit-linear-gradient(rgba(255,50,0,0),rgba(255,50,0,0.6) 82%, rgba(255,50,0,0.6) 93%, rgba(255,50,0,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,50,0,0),rgba(255,50,0,0.6) 82%, rgba(255,50,0,0.6) 93%, rgba(255,50,0,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,50,0,0),rgba(255,50,0,0.6) 82%, rgba(255,50,0,0.6) 93%, rgba(255,50,0,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,50,0,0),rgba(255,50,0,0.6) 82%, rgba(255,50,0,0.6) 93%, rgba(255,50,0,0)); /* Standard syntax */
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  height:95%;
+  width:25%;
+  left:0%;
+  top:0%;
+  position: absolute;
+  z-index:1;
+}
+
+div#leftPanelPurple {
+  z-index:10;
+  background: -webkit-linear-gradient(rgba(150,30,150,0),rgba(150,30,150,0.6) 82%, rgba(150,30,150,0.6) 93%, rgba(150,30,150,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(150,30,150,0),rgba(150,30,150,0.6) 82%, rgba(150,30,150,0.6) 93%, rgba(150,30,150,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(150,30,150,0),rgba(150,30,150,0.6) 82%, rgba(150,30,150,0.6) 93%, rgba(150,30,150,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(150,30,150,0),rgba(150,30,150,0.6) 82%, rgba(150,30,150,0.6) 93%, rgba(150,30,150,0)); /* Standard syntax */
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  height:95%;
+  width:25%;
+  left:0%;
+  top:0%;
+  position: absolute;
+  z-index:1;
+}
+
+div.leftTitle {
+  background-color: transparent;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 4em;
+  top: 0%;
+  height:5%
+  width:100%;
+  z-index:1;
+  color:rgb(255,255,255);
+}
+
+div.leftDescription {
+  background-color: transparent;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 2em;
+  top: 0%;
+  width:100%;
+  z-index:1;
+  position: relative;
+  /*border-bottom: 2px white solid;*/
+  color:rgb(255,255,255);
+}
+
+div.leftDetail {
+  background-color: transparent;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 1.7em;
+  font-weight:normal;
+  top: 2%;
+  z-index:1;
+  position: relative;
+  display: inline-block;
+}
+
+div.leftClickable{
+  background-image: url(../images/heart_v7/question_mark.png);
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  padding-left: 16%;
+  vertical-align: middle;
+  display: block;
+  position: absolute;
+  top: 75%;
+  height:15%;
+  width: 90%;
+  font-size: 1.7em;
+  z-index:1;
+  font-weight: normal;
+}
+
+div.leftClickableVideo{
+  background-image: url(../images/heart_v7/video_button.png);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 0% 20%;
+  padding-left: 25%;
+  vertical-align: middle;
+  position: relative;
+  top: 2%;
+  height:30%;
+  width: 80%;
+  font-size: 1.7em;
+  z-index:1;
+  font-weight: normal;
+}
+
+div.video_player{
+  position:absolute;
+  background-color:black;
+  width:70%;
+  height:100%;
+  top:-100%;
+  left:30%;
+  z-index:15;
+}
+
+div.close_video{
+  position:absolute;
+  display: table;
+  top:90%;
+  width:100%;
+  height:10%;
+  text-align: center;
+  font-size: 2em;
+  background-color: red;
+  background-color: black;
+  /*background: -webkit-linear-gradient(rgba(175,175,175,0.6),rgba(175,175,175,0)); /* For Safari 5.1 to 6.0 */*/
+  /*background: -o-linear-gradient(rgba(175,175,175,0.6),rgba(175,175,175,0)); /* For Opera 11.1 to 12.0 */*/
+  /*background: -moz-linear-gradient(rgba(175,175,175,0.6),rgba(175,175,175,0)); /* For Firefox 3.6 to 15 */*/
+  /*background: linear-gradient(rgba(128,42,88,1),rgba(128,42,88,0.3)); /* Standard syntax */*/
+  z-index: 9;
+}
+
+div.close_video:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+div.leftClickableAED{
+  background-image: url(../images/heart_v7/defibrillation.png);
+  background-color: red;
+  background-repeat: no-repeat;
+  background-size: 65px;
+  padding-left: 16%;
+  vertical-align: middle;
+  display: block;
+  position: absolute;
+  top: 90%;
+  height:100%;
+  width: 70%;
+  font-size: 1.7em;
+  z-index:1;
+  font-weight: normal;
+}
+
+div.leftClickableAED:hover {
+ cursor: pointer;
+ cursor: hand;
+}
+
+div.leftClickable:hover {
+ cursor: pointer;
+ cursor: hand;
+}
+bottom
+div.leftLargeClickable {
+  background-color: transparent;
+  vertical-align: middle;
+  font-size: 1.3em;
+  top: 2%;
+  left: 0%;
+  z-index:1;
+  height:30%;
+  position: relative;
+}
+
+div.leftLargeClickable:hover {
+ cursor: pointer;
+ cursor: hand;
+}
+
+div.leftProgressBar {
+  background-color: transparent;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 1.3em;
+  top: 80%;
+  z-index:1;
+  position: absolute;
+}
+
+div.leftFootnote {
+  background-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5em;
+  bottom: 5%;
+  z-index:1;
+  position: absolute;
+}
+
+div#rightInformation {
+  background-color: transparent;
+  z-index:1;
+  height:96%;
+  width:20%;
+  right:1%;
+  top:4%;
+  position: absolute;
+}
+
+div#rightPanel {
+  background-color: transparent;
+  z-index:1;
+  height:96%;
+  width:5%;
+  right:21%;
+  top:4%;
+  position: absolute;
+}
+div#rightPanelBottom {
+  background-color: transparent;
+  z-index:1;
+  height:96%;
+  width:5%;
+  right:21%;
+  top:40%;
+  position: absolute;
+}
+div.rightLogo {
+  z-index: 3;
+  left: 28%;
+  width:95%;
+  bottom: 2%;
+  height: 8%;
+  position: absolute;
+}
+
+div.rightChartTitle{
+  background-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.7em;
+  z-index:3;
+  left:1%;
+  width:97%;
+  position: relative;
+  color:rgb(175,175,175);
+}
+
+div.rightChart {
+  z-index:3;
+  left:0%;
+  width:95%;
+  height: 17%;
+  position: relative;
+}
+
+div#rightRateLabel{
+	background-color: transparent;
+	text-align:center;
+	z-index:3;
+	top:10%;
+	position: relative;
+	width: 97%
+  font-size: 1.5em;
+}
+
+div#rightRate{
+	vertical-align: middle;
+	background-color: transparent;
+	z-index:3;
+	left:3%;
+	width:93%;
+	top:12%;
+	height:1%;
+	position: relative;
+}
+
+div.rightChartDescription{
+	background-color: transparent;
+  	text-align: center;
+  	vertical-align: middle;
+	font-size: 1.5em;
+	font-weight:normal;
+	z-index:3;
+	left:1%;
+	width:97%;
+	top:2%;
+	position: relative;
+}
+
+div#home {
+ float: left;
+ height:8%;
+ width:8%;
+ max-width:8%;
+ left:3%;
+}
+
+div#home:hover {
+ cursor: pointer;
+ cursor: hand;
+}
+
+div.halfHeart:hover {
+ cursor: pointer;
+ cursor: hand;
+}
+
+div.showFibres:hover {
+ cursor: pointer;
+ cursor: hand;
+}
+
+div.medicationLifestyle:hover {
+ cursor: pointer;
+ cursor: hand;
+}
+
+div.medicationLifestyle{
+  display:inline-block;
+}
+
+div.bottomButton:hover {
+ cursor: pointer;
+ cursor: hand;
+}
+
+div#aed_button:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+
+div.bottomButton{
+  background: -webkit-linear-gradient(rgba(5,5,5,1), rgba(30,30,30,1) 4%,  rgba(5,5,5,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(5,5,5,1), rgba(30,30,30,1) 4%,  rgba(5,5,5,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(5,5,5,1), rgba(30,30,30,1) 4%,  rgba(5,5,5,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(5,5,5,1), rgba(30,30,30,1) 4%,  rgba(5,5,5,1)); /* Standard syntax */;
+  border-left: 1px rgb(5,5,5) solid;
+}
+
+div#bottom_control {
+ background-color: rgba(5, 5, 5, 1);
+ z-index:10;
+ left: 0%;
+ right: 0%;
+ bottom:0%;
+ height:10%;
+ position:absolute;
+}
+
+div#bottom_control_yellow {
+ background-color: rgba(5, 5, 5, 1);
+ z-index:10;
+ left: 0%;
+ right: 0%;
+ bottom:0%;
+ height:10%;
+ position:absolute;
+}
+
+div#bottom_control_red {
+ background-color: rgba(5, 5, 5, 1);
+ z-index:10;
+ left: 0%;
+ right: 0%;
+ bottom:0%;
+ height:10%;
+ position:absolute;
+}
+
+div#bottom_control_purple {
+ background-color: rgba(5, 5, 5, 1);
+ z-index:10;
+ left: 0%;
+ right: 0%;
+ bottom:0%;
+ height:10%;
+ position:absolute;
+}
+
+div#bottom_control_green_sub{
+  background-color: rgba(5,5,5, 1);
+  z-index:10;
+  left: 0%;
+  right: 0%;
+  bottom:10%;
+  height:9%;
+  position:absolute;
+}
+
+div#bottom_control_yellow_sub{
+  background-color: rgba(5, 5, 5, 1);
+  z-index:10;
+  left: 0%;
+  right: 0%;
+  bottom:10%;
+  height:9%;
+  position:absolute;
+}
+div#bottom_control_red_sub{
+  background-color: rgba(5, 5, 5, 1);
+  z-index:10;
+  left: 0%;
+  right: 0%;
+  bottom:10%;
+  height:9%;
+  position:absolute;
+}
+
+div.bottom_control_green_graphics{
+  background-color: rgba(50,205,50,0.6);
+  z-index:9;
+  position:absolute;
+}
+
+div.bottom_control_yellow_graphics{
+  background-color: rgba(255,255,0,0.6);
+  z-index:9;
+  position:absolute;
+}
+
+div.bottom_control_red_graphics{
+  background-color: rgba(255,50,0,0.6);
+  z-index:9;
+  position:absolute;
+}
+
+
+div#bottom_control_back_panel{
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  height:9%;
+  width:4.5%;
+  left:0%;
+  bottom:9%;
+  position: absolute;
+  background-color: red;
+  z-index:12;
+}
+
+
+div#bottom_right_control {
+ background-color: rgb(0,0,0,0);
+ z-index:11;
+ left:50%;
+ bottom:0%;
+ height:9%;
+ width:32%;
+ position: absolute;
+}
+
+div#gestures_icon{
+  background-color: rgba(0,0,0,0);
+  z-index: 11;
+  left:45%;
+  bottom: 0%;
+  padding-top: 0%;
+  width: 18%;
+  height: 12%;
+  position: absolute;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+div.progressClickable:hover {
+ cursor: pointer;
+ cursor: hand;
+}
+
+div.progressClickable {
+ 	height:100%;
+ 	position: absolute;
+}
+
+div.leftQuestionWidget {
+  padding-top: 5%;
+  min-height: 10%;
+}
+
+div.leftQuestionPic{
+  padding-left: 0%;
+  vertical-align: middle;
+  position: relative;
+  width: 90%;
+  font-size: 1.7em;
+  z-index:1;
+  font-weight: normal;
+  display: inline-block;
+  color:rgb(255,255,255);
+}
+
+div.leftAnswer{
+  background-color: transparent;
+  padding-top: 0%;
+  padding-left: 0%;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 1.3em;
+  font-weight:normal;
+  top: 2%;
+  z-index:1;
+  position: relative;
+  color: rgb(200,200,200);
+  /*overflow-y:auto;*/
+  max-height: 800px;
+}
+
+hr.style {
+  border: 0;
+  height: 2px;
+  background-image: -webkit-linear-gradient(left, #8c8b8b, #f0f0f0, #8c8b8b);
+  background-image: -moz-linear-gradient(left, rgba(200,200,200,1), rgba(200,200,200,1), rgba(200,200,200,1));
+  background-image: -ms-linear-gradient(left,#8c8b8b, #f0f0f0, #8c8b8b);
+  background-image: -o-linear-gradient(left, #8c8b8b, #f0f0f0, #8c8b8b);
+}
+
+p.big{
+  line-height: 140%;
+}
+
+div.downArrow{
+  background-image: url(../images/heart_v7/heart_arrow_down.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding-left: 10%;
+  padding-top: 1%;
+  left:0%;
+  vertical-align: middle;
+  position: relative;
+  height:60px;
+  width:50%;
+  /*width: 90%;*/
+  font-size: 1.3em;
+  z-index:1;
+  font-weight: normal;
+  color:rgb(175,175,175);
+}
+
+div.upArrow{
+  background-image: url(../images/heart_v7/heart_arrow_up.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding-left: 10%;
+  padding-top: 1%;
+  left:0%;
+  vertical-align: middle;
+  position: relative;
+  height:60px;
+  width:50%;
+  /*width: 90%;*/
+  font-size: 1.3em;
+  z-index:1;
+  font-weight: normal;
+  color:rgb(175,175,175);
+}
+
+div.downArrow:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+div.upArrow:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+div.aboutUsButtons{
+  background-color: rgba(255,255,255,0.2);
+  z-index:9;
+  font-size: 2.3em;
+  vertical-align: middle;
+  left:20%;
+  width:60%;
+  height:70px;
+  color:rgb(175,175,175);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+  position:absolute;
+  border-radius: 20px;
+}
+
+div#aboutUsInfoPanel{
+  background-color: transparent;
+  z-index:1;
+  height:100%;
+  width:70%;
+  right:0%;
+  top:0%;
+  position: absolute;
+}
+
+div.mission{
+  background-color:rgba(175,175,175,0.0);
+  position:absolute;
+  top:10%;
+  width:25%;
+  height:25%;
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2em;
+}
+
+div#bottom_logo{
+  background-color: transparent;
+  z-index:11;
+  height:15%;
+  width:15%;
+  right:1%;
+  bottom:1%;
+  position: absolute;
+  display: inline-block;
+}
