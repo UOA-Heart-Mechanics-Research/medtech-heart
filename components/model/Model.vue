@@ -105,6 +105,30 @@ export default {
     }, 100);
     this.container.appendChild(baseContainer);
     this.start();
+
+    window.addEventListener(
+      "touchstart",
+      (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        var len = event.touches.length;
+        if (len === 3) {
+          this.scene.controls.noZoom = true;
+          this.scene.controls.noRotate = true;
+        }
+      },
+      false
+    );
+    window.addEventListener(
+      "touchend",
+      () => {
+        setTimeout(() => {
+          this.scene.controls.noZoom = false;
+          this.scene.controls.noRotate = false;
+        }, 100);
+      },
+      false
+    );
   },
 
   methods: {
@@ -140,8 +164,8 @@ export default {
       this.scene = this.baseRenderer.getSceneByName(model_name);
       if (this.scene === undefined) {
         this.scene = this.baseRenderer.createScene(model_name);
-        this.scene.controls.staticMoving = true;
-        this.scene.controls.rotateSpeed = 2.0;
+        // this.scene.controls.staticMoving = true;
+        // this.scene.controls.rotateSpeed = 2.0;
         this.baseRenderer.setCurrentScene(this.scene);
         this.scene.loadGltf(metaURL, (content) => {
           if (model_name === "ArrythmiaElectricity") {
