@@ -1,0 +1,47 @@
+name: Deploy from multiple branches
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: yarn install
+      - run: yarn generate:gh-pages
+      - run: cp -rf build/kiwrious-config build/_nuxt/kiwrious-config
+      - run: cp -rf googled1d17d6f9157174f.html build/googled1d17d6f9157174f.html
+
+      - uses: actions/checkout@v3
+        with:
+          ref: debug
+          path: build/debug
+          clean: false
+      - run: rm -rf build/debug/.git
+
+      - uses: actions/checkout@v3
+        with:
+          ref: v1
+          path: build/v1
+          clean: false
+      - run: rm -rf build/v1/.git
+
+      - uses: actions/checkout@v3
+        with:
+          ref: v2
+          path: build/v2
+          clean: false
+      - run: rm -rf build/v2/.git
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{secrets.MEDTECH_HEART_GITHUB}}
+          publish_dir: "./build"
+          user_name: "LinkunGao"
+          user_email: "gaolinkun123@gmail.com"
