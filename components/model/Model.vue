@@ -115,6 +115,7 @@ export default {
         if (len === 3) {
           this.scene.controls.noZoom = true;
           this.scene.controls.noRotate = true;
+          this.scene.controls.staticMoving = false;
         }
       },
       false
@@ -122,6 +123,7 @@ export default {
     window.addEventListener(
       "touchend",
       () => {
+        this.scene.controls.staticMoving = true;
         setTimeout(() => {
           this.scene.controls.noZoom = false;
           this.scene.controls.noRotate = false;
