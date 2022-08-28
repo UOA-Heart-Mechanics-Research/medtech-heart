@@ -166,7 +166,7 @@ export default {
       this.scene = this.baseRenderer.getSceneByName(model_name);
       if (this.scene === undefined) {
         this.scene = this.baseRenderer.createScene(model_name);
-        // this.scene.controls.staticMoving = true;
+        this.scene.controls.staticMoving = true;
         // this.scene.controls.rotateSpeed = 2.0;
         this.baseRenderer.setCurrentScene(this.scene);
         this.scene.loadGltf(metaURL, (content) => {
