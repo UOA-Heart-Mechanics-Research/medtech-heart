@@ -11,10 +11,6 @@
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
   },
-  "engines": {
-    "node": "16.16.0",
-    "npm": "8.5.2"
-  },
   "dependencies": {
     "core-js": "^3.19.3",
     "gltfloader-plugin-test": "^1.8.16",
