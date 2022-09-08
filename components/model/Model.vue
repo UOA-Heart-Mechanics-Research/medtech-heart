@@ -43,6 +43,7 @@ export default {
       scene: null,
       modelToSceneArray: [],
       container: null,
+      isModelHalfed: false,
       modelName: "",
       modelURLsArray: {
         NoInfarct_highres: [
@@ -97,7 +98,7 @@ export default {
     this.modelName = this.$model().name;
     this.container = this.$refs.baseDomObject;
     const baseContainer = this.$baseContainer();
-
+    this.isModelHalfed = this.$isHalfModel();
     setTimeout(() => {
       this.mdAndUp
         ? (baseContainer.style.height = "100vh")
@@ -209,15 +210,18 @@ export default {
         ];
         const viewpoint = this.scene.setViewPoint(oldCam, target);
         this.scene.updateCamera(viewpoint);
+        if (this.isModelHalfed != this.scene.isHalfed) this.showHalf();
+        this.scene.isHalfed = this.isModelHalfed;
       }
     },
 
     onResetAllModelsView() {
       this.heartRate = 2500;
+      this.isModelHalfed = false;
       $nuxt.$emit("beat-reset", 2500);
       this.$store.commit("setHeartBeat", 2500);
-
       this.$store.commit("setPreviousCamera", {});
+      this.$store.commit("setIsHalfModel", false);
 
       for (var k in this.modelToSceneArray) {
         if (this.modelToSceneArray.hasOwnProperty(k)) {
@@ -278,32 +282,34 @@ export default {
       }
     },
     onHalfHeartPressed() {
+      this.isModelHalfed = !this.isModelHalfed;
       this.showHalf();
     },
     showHalf(sceneObj) {
-      console.log("hala");
       let scene;
       if (sceneObj) {
         scene = sceneObj;
       } else {
         scene = this.baseRenderer.getSceneByName(this.modelName);
       }
-      scene.content.traverse((child) => {
-        if (
-          child.name === "Post_top" ||
-          child.name === "Post_inner" ||
-          child.name === "Post_NonInfarct" ||
-          child.name === "Post_top_1" ||
-          child.name === "Post_inner_1" ||
-          child.name === "Post_NonInfarct_1" ||
-          child.name === "Post"
-        ) {
-          scene.updateModelChildrenVisualisation(child);
-        }
-      });
+      this.$store.commit("setIsHalfModel", this.isModelHalfed);
+
       if (this.modelName === "NormalElectricity") {
         scene.content.traverse((child) => {
-          if (child.name === "Ant" || child.name === "Post") {
+          if (child.name === "Ant") {
+            scene.updateModelChildrenVisualisation(child);
+          }
+        });
+      } else {
+        scene.content.traverse((child) => {
+          if (
+            child.name === "Post_top" ||
+            child.name === "Post_inner" ||
+            child.name === "Post_NonInfarct" ||
+            child.name === "Post_top_1" ||
+            child.name === "Post_inner_1" ||
+            child.name === "Post_NonInfarct_1"
+          ) {
             scene.updateModelChildrenVisualisation(child);
           }
         });
