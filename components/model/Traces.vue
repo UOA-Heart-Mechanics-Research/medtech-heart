@@ -7,10 +7,7 @@
         : 'trace-box-sm'
     "
   >
-    <div
-      class="mt-4 lg:mt-0 flex flex-col items-center space-y-10 lg:space-y-4"
-      :class="mdAndUp ? 'EGC-lg' : 'EGC-sm'"
-    >
+    <div class="graph-comm" :class="mdAndUp ? 'EGC-lg' : 'EGC-sm'">
       <div
         class="font-weight-bold text-subtitle-2 text-xl-h6 text-sm-subtitle-2 text-md-body-1"
       >
@@ -22,13 +19,16 @@
         class="w-full"
         :class="mdAndUp ? 'rightECG-md' : 'rightECG-sm'"
       ></div>
-      <div id="ecgDescription" class="text-caption text-xl-body-2">
+      <div
+        id="ecgDescription"
+        class="text-caption text-xl-body-2"
+        :class="mdAndUp ? 'graph-text-md' : 'graph-text-sm'"
+      >
         {{ $ecg().description }}
       </div>
     </div>
-    <div
-      class="mt-4 lg:mt-0 flex flex-col items-center space-y-10 lg:space-y-4"
-    >
+    <!-- mt-4 lg:mt-0 flex flex-col items-center space-y-10 lg:space-y-4 -->
+    <div class="graph-comm" :class="mdAndUp ? 'LVP-lg' : 'LVP-sm'">
       <div
         class="font-weight-bold text-subtitle-2 text-xl-h6 text-sm-subtitle-2 text-md-body-1"
       >
@@ -40,7 +40,11 @@
         class="w-full"
         :class="mdAndUp ? 'rightECG-md' : 'rightECG-sm'"
       ></div>
-      <div id="lvpDescription" class="text-caption text-xl-body-2">
+      <div
+        id="lvpDescription"
+        class="text-caption text-xl-body-2"
+        :class="mdAndUp ? 'graph-text-md' : 'graph-text-sm'"
+      >
         {{ $lvp().description }}
       </div>
     </div>
@@ -73,19 +77,21 @@ export default {
     ecgName = null;
     lvpName = null;
     loadChart(this.$ecg(), this.$lvp(), this.$category(), 1.0);
-    this.updateEcg();
+    setTimeout(() => {
+      this.updateEcg();
+    }, 200);
+    // this.updateEcg();
   },
   methods: {
     updateEcg() {
       this.baseRenderer = this.$baseRenderer();
       if (this.baseRenderer) {
+        this.baseRenderer.preRenderCallbackFunctions.length = 0;
         var updateIndicatorsAndTimer = () => {
           const scene = this.baseRenderer.getCurrentScene();
           const normaliseTime = scene.getCurrentTime();
-
           updateIndicator(normaliseTime);
         };
-
         this.baseRenderer.addPreRenderCallbackFunction(
           updateIndicatorsAndTimer
         );
@@ -114,15 +120,37 @@ export default {
 }
 
 .rightECG-sm {
+  width: 40vw;
+  height: 20vw;
   min-height: 80px;
 }
 .rightECG-md {
-  min-height: 100px;
+  width: 20vw;
+  min-height: 150px;
+}
+.graph-text-md {
+  width: 15vw;
+}
+.graph-text-sm {
+  width: 100vw;
+}
+.graph-comm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .EGC-lg {
-  height: 30vh;
+  height: 20vh;
+  margin-bottom: 10vh;
 }
 .EGC-sm {
-  // width: 80vh;
+  width: 100vw;
+}
+.LVP-lg {
+  height: 20vh;
+}
+.LVP-sm {
+  width: 100vw;
 }
 </style>

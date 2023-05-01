@@ -1,4 +1,5 @@
-import * as Copper from "gltfloader-plugin-test";
+// import * as Copper from "gltfloader-plugin-test";
+import * as Copper from "copper3d_visualisation";
 import * as THREE from "three";
 
 const container = document.createElement("div");

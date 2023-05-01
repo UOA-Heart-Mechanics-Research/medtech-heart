@@ -1,8 +1,8 @@
 In a heart attack, fatty deposits build up inside the coronary arteries. This obstructs blood flow to the heart muscle and causes tissue damage.
 
 <div class="topic-img-big">
-<img src="img/coronary_block_moderate_no_vid.png" width="240px" height="auto"/>
-<span class="md-video" data-play="video">
+<img src="img/coronary_block_moderate_no_vid.png" width="80%" height="auto"/>
+<span class="md-video md-mt" data-play="video">
 <img id="blocked" src="img/blockage.png" class="video-icon-tall"/>
 </span>
 </div>

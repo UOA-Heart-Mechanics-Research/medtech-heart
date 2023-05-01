@@ -11,7 +11,6 @@
           ref="kiwrious"
           class="kiwirous"
         />
-        <!-- </a> -->
       </div>
     </div>
     <v-slider

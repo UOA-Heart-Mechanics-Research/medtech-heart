@@ -33,6 +33,17 @@ p {
 .md-video {
   cursor: pointer;
 }
+.md-mt {
+  float: right;
+}
+
+.text-container {
+  overflow: hidden;
+  p {
+    text-align: justify;
+  }
+}
+
 .topic-img {
   display: flex;
   flex-direction: row;

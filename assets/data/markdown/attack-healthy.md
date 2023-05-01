@@ -2,9 +2,9 @@ The heart pumps blood to itself through blood vessels called the coronary arteri
 
 <div class="topic-img-big">
 
-<img src="img/coronary_heart.png" width="240px" height="auto"/>
-<span class="md-video" data-play="video">
-<img id="blocked" src="img/blockage.png" class="video-icon-tall"/>
+<img src="img/coronary_heart.png" width="80%" height="auto"/>
+<span class="md-video md-mt" data-play="video">
+  <img id="blocked" src="img/blockage.png" class="video-icon-tall"/>
 </span>
 </div>
 
