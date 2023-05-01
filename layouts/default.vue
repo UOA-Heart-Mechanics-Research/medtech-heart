@@ -86,7 +86,7 @@ export default {
 
   created() {
     console.log(
-      "%cMedtech Heart Vue App %cBeta:v3.0.1",
+      "%cMedtech Heart Vue App %cBeta:v3.1.0",
       "padding: 3px;color:white; background:#023047",
       "padding: 3px;color:white; background:#219EBC"
     );
