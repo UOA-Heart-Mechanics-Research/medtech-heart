@@ -1,4 +1,6 @@
 import colors from "vuetify/es5/util/colors";
+const serveStatic = require("serve-static");
+const path = require("path");
 const routerBase =
   process.env.DEPLOY_ENV === "GH_PAGES"
     ? {
@@ -27,6 +29,10 @@ export default {
         rel: "icon",
         type: "image/x-icon",
         href: "/medtech-heart/favicon2.ico",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Bad+Script&family=Raleway:wght@100;300&display=swap",
       },
     ],
     meta: [
@@ -73,6 +79,20 @@ export default {
     ],
   },
 
+  serverMiddleware: [
+    // add middlewares
+    {
+      handler: serveStatic(path.resolve(__dirname, "static"), {
+        setHeaders(res, path) {
+          if (/\.mp4$/.test(path)) {
+            res.setHeader("Content-Type", "video/mp4");
+          }
+        },
+      }),
+      prefix: "@/static",
+    },
+  ],
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/sass/global.scss", "@/assets/sass/base.scss"],
 
@@ -93,6 +113,7 @@ export default {
       "~/components/model",
       "~/components/navigation",
       "~/components/topics",
+      "~/components/loading",
     ],
   },
 

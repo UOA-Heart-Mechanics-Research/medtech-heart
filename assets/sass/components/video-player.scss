@@ -15,12 +15,25 @@
   // background-color: aqua;
   bottom: 0px;
 }
+.video-player-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  video {
+    width: 60vw;
+    height: auto;
+    object-fit: cover;
+  }
+}
 
 .display-video {
   display: block;
   margin-top: 0;
   width: 100%;
   flex-grow: 1;
+
   &.--sm {
     height: 30rem;
   }

@@ -102,10 +102,17 @@ export default {
     setTimeout(() => {
       this.mdAndUp
         ? (baseContainer.style.height = "100vh")
-        : (baseContainer.style.height = "400px");
+        : (baseContainer.style.height = "100vw");
+      this.container.appendChild(baseContainer);
+      this.start();
     }, 100);
-    this.container.appendChild(baseContainer);
-    this.start();
+
+    window.addEventListener("resize", () => {
+      this.mdAndUp
+        ? (baseContainer.style.height = "100vh")
+        : (baseContainer.style.height = "100vw");
+      this.scene.onWindowResize();
+    });
 
     window.addEventListener(
       "touchstart",
@@ -191,7 +198,11 @@ export default {
       } else {
         this.meshReady(this.oldCam);
         this.baseRenderer.setCurrentScene(this.scene);
+        if (model_name === "ArrythmiaElectricity") {
+          if (this.isModelHalfed != this.scene.isHalfed) this.showHalf();
+        }
       }
+      this.scene.onWindowResize();
     },
     meshReady(oldCam) {
       if (this.oldCam && oldCam.near) {
@@ -241,7 +252,7 @@ export default {
     },
     updateSlider(heartRate) {
       const convertRate = this.convertHeartRate(heartRate);
-      this.scene.setPlayRate(convertRate);
+      !!this.scene && this.scene.setPlayRate(convertRate);
     },
     addLabel(model_name) {
       if (model_name === "NoInfarct" || model_name === "NormalElectricity") {
@@ -297,6 +308,12 @@ export default {
       if (this.modelName === "NormalElectricity") {
         scene.content.traverse((child) => {
           if (child.name === "Ant") {
+            scene.updateModelChildrenVisualisation(child);
+          }
+        });
+      } else if (this.modelName === "ArrythmiaElectricity") {
+        scene.content.traverse((child) => {
+          if (child.name === "Post") {
             scene.updateModelChildrenVisualisation(child);
           }
         });
@@ -393,7 +410,7 @@ export default {
 }
 .baseDom-sm {
   width: 100vw;
-  height: 400px;
+  height: 100vw;
   margin: 0;
   padding: 0;
 }

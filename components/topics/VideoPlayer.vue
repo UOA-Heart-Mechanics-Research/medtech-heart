@@ -5,13 +5,10 @@
       class="container-default video-player flexbox --vertical"
       :class="$vuetify.breakpoint.mdAndUp ? 'full-height' : ''"
     >
-      <iframe
-        allowfullscreen
-        frameborder="0"
-        :class="getVideoStyle()"
-        :src="selectedVideo.link"
-      >
-      </iframe>
+      <div class="video-player-container">
+        <video :src="selectedVideo.link" autoplay controls></video>
+      </div>
+
       <div id="outer-credits">
         <div class="credits flexbox">
           <img src="@/assets/images/Annie-Jones.png" class="img-icon" />
@@ -69,7 +66,6 @@ export default {
   methods: {
     refreshVideo: function (currentId) {
       this.videoFound = false;
-
       if (currentId) {
         this.selectedVideo = this.videos[currentId];
         if (this.selectedVideo) {

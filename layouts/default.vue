@@ -1,5 +1,8 @@
 <template>
   <v-app ref="base_background">
+    <div v-show="load_app" class="loading">
+      <loading-bar />
+    </div>
     <div class="rightPanel">
       <div>
         <div class="pa-0 black">
@@ -51,11 +54,13 @@ export default {
       multiplier: 1,
       panelHeight: 0,
       isVideo: true,
+      load_app: true,
     };
   },
 
   computed: {
     mdAndUp() {
+      this.load_app = false;
       return this.$vuetify.breakpoint.mdAndUp;
     },
   },
@@ -81,7 +86,7 @@ export default {
 
   created() {
     console.log(
-      "%cMedtech Heart Vue App %cBeta:v3.0.1",
+      "%cMedtech Heart Vue App %cBeta:v3.1.0",
       "padding: 3px;color:white; background:#023047",
       "padding: 3px;color:white; background:#219EBC"
     );
@@ -97,6 +102,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .outer-large {
   min-width: 409px;
   width: 30vw;
