@@ -1,9 +1,48 @@
 /*!
-    fflate - fast JavaScript compression/decompression
-    <https://101arrowz.github.io/fflate>
-    Licensed under MIT. https://github.com/101arrowz/fflate/blob/master/LICENSE
-    version 0.6.9
-    */
+  * vue-router v3.5.3
+  * (c) 2021 Evan You
+  * @license MIT
+  */
+
+/*!
+ * Vue.js v2.6.14
+ * (c) 2014-2021 Evan You
+ * Released under the MIT License.
+ */
+
+/*!
+ * vuex v3.6.2
+ * (c) 2021 Evan You
+ * @license MIT
+ */
+
+
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+	fflate - fast JavaScript compression/decompression
+	<https://101arrowz.github.io/fflate>
+	Licensed under MIT. https://github.com/101arrowz/fflate/blob/master/LICENSE
+	version 0.6.9
+	*/
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
 
 /*!
  * vue-client-only v0.0.0-semantic-release
@@ -37,85 +76,72 @@
 
 /*! copper3d_plugin_heartjs_config */
 
+/*! dicom-parser - 1.8.12 - 2023-02-20 | (c) 2017 Chris Hafey | https://github.com/cornerstonejs/dicomParser */
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
 /*! jsfft */
 
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
+/*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
 /*!********************!*\
-      !*** ./ts/main.ts ***!
-      \********************/
+	  !*** ./ts/main.ts ***!
+	  \********************/
 
 /*!****************************************!*\
-      !*** ./node_modules/jsfft/dist/fft.js ***!
-      \****************************************/
+	  !*** ./node_modules/jsfft/dist/fft.js ***!
+	  \****************************************/
 
 /*!**************************************************!*\
-      !*** ./node_modules/jsfft/dist/complex_array.js ***!
-      \**************************************************/
+	  !*** ./node_modules/jsfft/dist/complex_array.js ***!
+	  \**************************************************/
 
 /*!**************************************************!*\
-      !*** ./ts/kiwrious/service/serial/SerialUtil.ts ***!
-      \**************************************************/
+	  !*** ./ts/kiwrious/service/serial/SerialUtil.ts ***!
+	  \**************************************************/
 
 /*!****************************************************!*\
-      !*** ./ts/kiwrious/service/serial/SerialReader.ts ***!
-      \****************************************************/
+	  !*** ./ts/kiwrious/service/serial/SerialReader.ts ***!
+	  \****************************************************/
 
 /*!*****************************************************!*\
-      !*** ./ts/kiwrious/service/serial/SerialDecoder.ts ***!
-      \*****************************************************/
+	  !*** ./ts/kiwrious/service/serial/SerialDecoder.ts ***!
+	  \*****************************************************/
 
 /*!*****************************************************!*\
-      !*** ./ts/kiwrious/service/serial/SerialService.ts ***!
-      \*****************************************************/
+	  !*** ./ts/kiwrious/service/serial/SerialService.ts ***!
+	  \*****************************************************/
 
 /*!******************************************************!*\
-      !*** ./ts/kiwrious/service/serial/SerialHexValue.ts ***!
-      \******************************************************/
+	  !*** ./ts/kiwrious/service/serial/SerialHexValue.ts ***!
+	  \******************************************************/
 
 /*!******************************************************!*\
-      !*** ./ts/kiwrious/service/serial/SerialRawValue.ts ***!
-      \******************************************************/
+	  !*** ./ts/kiwrious/service/serial/SerialRawValue.ts ***!
+	  \******************************************************/
 
 /*!**********************************************************!*\
-      !*** ./ts/kiwrious/service/serial/HeartRateProcessor.ts ***!
-      \**********************************************************/
+	  !*** ./ts/kiwrious/service/serial/HeartRateProcessor.ts ***!
+	  \**********************************************************/
 
 /*!**************************************************************!*\
-      !*** ./ts/kiwrious/service/serial/SerialHeartRateDecoder.ts ***!
-      \**************************************************************/
+	  !*** ./ts/kiwrious/service/serial/SerialHeartRateDecoder.ts ***!
+	  \**************************************************************/
 
 /*!********************************************************************************************!*\
-      !*** ./node_modules/copper3d_plugin_heartjs_config/dist/copper3d_plugin_heartjs_config.js ***!
-      \********************************************************************************************/
+	  !*** ./node_modules/copper3d_plugin_heartjs_config/dist/copper3d_plugin_heartjs_config.js ***!
+	  \********************************************************************************************/
 
 /**
-     * @license
-     * Copyright 2010-2022 Three.js Authors
-     * SPDX-License-Identifier: MIT
-     */
+	 * @license
+	 * Copyright 2010-2023 Three.js Authors
+	 * SPDX-License-Identifier: MIT
+	 */
 
 /**
  * @license
  * Copyright 2010-2022 Three.js Authors
  * SPDX-License-Identifier: MIT
- */
-
-
-/*!
-  * vue-router v3.5.3
-  * (c) 2021 Evan You
-  * @license MIT
-  */
-
-/*!
- * Vue.js v2.6.14
- * (c) 2014-2021 Evan You
- * Released under the MIT License.
- */
-
-/*!
- * vuex v3.6.2
- * (c) 2021 Evan You
- * @license MIT
  */
