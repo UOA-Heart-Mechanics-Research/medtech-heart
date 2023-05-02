@@ -1,4 +1,4 @@
-The heart pumps blood to itself through blood vessels called the coronary arteries (not shown in the 3D model). A heart attack occurs when blood flow is obstructed by a narrowing of these arteries.
+The heart pumps blood to itself through blood vessels called coronary arteries (not shown in the 3D model). A heart attack occurs when blood flow is obstructed by a narrowing of these arteries.
 
 <div class="topic-img-big">
 

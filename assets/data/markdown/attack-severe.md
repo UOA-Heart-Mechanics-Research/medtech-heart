@@ -10,4 +10,4 @@ If a minor heart attack is left untreated, or if medication is stopped too early
 
 A severe heart attack can cause permanent damage to a large portion of heart tissue. This prevents the heart from generating enough pressure to pump blood around the body (red trace).
 
-Muscle damage due to a heart attack can lead to problems with electrical activity of the heart. Untreated heart attacks can eventually lead to heart failure.
+Muscle damage due to a heart attack can lead to problems with the electrical activity of the heart. Untreated heart attacks can eventually lead to heart failure.

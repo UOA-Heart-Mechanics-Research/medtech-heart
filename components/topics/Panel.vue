@@ -101,6 +101,12 @@ export default {
         let i;
         for (i = 0; i < links.length; i++) {
           let element = links[i];
+
+          if (element.getAttribute("data-aed-play") == "aed_img") {
+            element.addEventListener("click", () => {
+              this.$router.push("/electricity-healthy");
+            });
+          }
           if (element.getAttribute("data-play") == "video") {
             element.addEventListener("click", this.play);
           }

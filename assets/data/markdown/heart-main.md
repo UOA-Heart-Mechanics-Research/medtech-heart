@@ -15,7 +15,7 @@ This is an interactive model of the heart's two main pumping chambers: the ventr
 
 <p>The heart pumps blood around the body to provide all the organ systems with oxygen and nutrients.</p>
 
-<p>The ECG trace (top right) represents the electrical waves in the heart that stimulate contraction and generate pressure (middle right) to pump blood.</p>
+<p>The ECG trace represents the electrical waves in the heart that stimulate contraction and generate pressure to pump blood.</p>
 </div>
 
 ---
