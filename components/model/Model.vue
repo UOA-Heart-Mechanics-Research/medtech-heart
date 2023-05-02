@@ -175,7 +175,8 @@ export default {
       if (this.scene === undefined) {
         this.scene = this.baseRenderer.createScene(model_name);
         this.scene.controls.staticMoving = true;
-        // this.scene.controls.rotateSpeed = 2.0;
+        this.scene.controls.rotateSpeed = 2.0;
+        this.scene.controls.panSpeed = 3.0;
         this.baseRenderer.setCurrentScene(this.scene);
         this.scene.loadGltf(metaURL, (content) => {
           if (model_name === "ArrythmiaElectricity") {
@@ -258,7 +259,7 @@ export default {
       if (model_name === "NoInfarct" || model_name === "NormalElectricity") {
         this.Copper.addLabelToScene(
           this.scene,
-          "right ventricle",
+          "Right Ventricle",
           -45.323991175632,
           44.1417335930078,
           10.421283,
@@ -266,7 +267,7 @@ export default {
         );
         this.Copper.addLabelToScene(
           this.scene,
-          "left ventricle",
+          "Left Ventricle",
           -55.056679,
           4.82123313284426,
           5.421283,
@@ -275,7 +276,7 @@ export default {
       } else if (model_name === "SmallInfarct") {
         this.Copper.addLabelToScene(
           this.scene,
-          "damaged tissue",
+          "Damaged Tissue",
           30,
           -40,
           0,
@@ -284,7 +285,7 @@ export default {
       } else if (model_name === "LargeInfarct") {
         this.Copper.addLabelToScene(
           this.scene,
-          "damaged tissue",
+          "Damaged Tissue",
           15,
           -45,
           0,

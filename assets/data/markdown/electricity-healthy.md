@@ -1,6 +1,6 @@
 Electrical waves (coloured yellow) pass through the heart to trigger contraction of the muscular walls. The heart needs coordinated electrical waves and smooth contraction to pump effectively.
 
-The electrical waves in the heart can be measured by placing electrodes on the chest. This is called an electrocardiogram (ECG) recording, as shown at the right.
+The electrical waves in the heart can be measured by placing electrodes on the chest. This is called an electrocardiogram (ECG) recording, as shown on the right.
 
 ---
 

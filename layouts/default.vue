@@ -1,5 +1,5 @@
 <template>
-  <v-app ref="base_background">
+  <v-app ref="base_background" class="root">
     <div v-show="load_app" class="loading">
       <loading-bar />
     </div>
@@ -86,7 +86,7 @@ export default {
 
   created() {
     console.log(
-      "%cMedtech Heart Vue App %cBeta:v3.1.0",
+      "%cMedtech Heart Vue App %cBeta:v3.1.1",
       "padding: 3px;color:white; background:#023047",
       "padding: 3px;color:white; background:#219EBC"
     );
@@ -102,6 +102,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.root {
+  user-select: none;
+}
 .loading {
   position: fixed;
   top: 0;

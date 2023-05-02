@@ -11,7 +11,7 @@
       <div
         class="font-weight-bold text-subtitle-2 text-xl-h6 text-sm-subtitle-2 text-md-body-1"
       >
-        ECG
+        Electrocardiogram (ECG)
       </div>
       <div
         id="rightECG"

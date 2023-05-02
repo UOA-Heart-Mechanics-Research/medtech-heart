@@ -14,12 +14,12 @@
         "ecg": {
           "name": "Normal",
           "path": "ECG/NormalECG.json",
-          "description": "electrical pulses make the heart muscle contract"
+          "description": "Electrical pulses make the heart muscle contract"
         },
         "lvp": {
           "name": "Normal",
           "path": "LVP/NormalLVP.json",
-          "description": "muscle contraction generates pump pressure"
+          "description": "Muscle contraction generates pump pressure"
         },
         "model": { "name": "NoInfarct" }
       }
@@ -40,12 +40,12 @@
         "ecg": {
           "name": "NoInfarct",
           "path": "ECG/NormalECG.json",
-          "description": "electrical pulses make the heart muscle contract"
+          "description": "Electrical pulses make the heart muscle contract"
         },
         "lvp": {
           "name": "NoInfarct",
           "path": "LVP/NormalLVP.json",
-          "description": "muscle contraction generates pump pressure"
+          "description": "Muscle contraction generates pump pressure"
         },
         "model": { "name": "NoInfarct" }
       },
@@ -60,12 +60,12 @@
         "ecg": {
           "name": "SmallInfarct",
           "path": "ECG/MildInfarctECG_shifted.json",
-          "description": "minor heart tissue damage can show up as subtle changes to the ECG"
+          "description": "Minor heart tissue damage can show up as subtle changes to the ECG"
         },
         "lvp": {
           "name": "SmallInfarct",
           "path": "LVP/smallInfarctLVP.json",
-          "description": "damaged tissue leads to less contraction force and less pressure"
+          "description": "Damaged tissue leads to less contraction force and less pressure"
         },
         "model": { "name": "SmallInfarct" }
       },
@@ -80,12 +80,12 @@
         "ecg": {
           "name": "LargeInfarct",
           "path": "ECG/LargeInfarctECG_shifted.json",
-          "description": "severe heart tissue damage can show up as large changes to the ECG"
+          "description": "Severe heart tissue damage can show up as large changes to the ECG"
         },
         "lvp": {
           "name": "LargeInfarct",
           "path": "LVP/largeInfarctLVP_shifted.json",
-          "description": "damaged tissue leads to less contraction force and less pressure"
+          "description": "Damaged tissue leads to less contraction force and less pressure"
         },
         "model": { "name": "LargeInfarct" }
       }
@@ -106,12 +106,12 @@
         "ecg": {
           "name": "NormalElectricity",
           "path": "ECG/NormalECG.json",
-          "description": "electrical pulses make the heart muscle contract"
+          "description": "Electrical pulses make the heart muscle contract"
         },
         "lvp": {
           "name": "NormalElectricity",
           "path": "LVP/NormalLVP.json",
-          "description": "muscle contraction generates pump pressure"
+          "description": "Muscle contraction generates pump pressure"
         },
         "model": { "name": "NormalElectricity" }
       },
@@ -126,12 +126,12 @@
         "ecg": {
           "name": "Arrhythmia",
           "path": "ECG/ArrhythmiaECG.json",
-          "description": "abnormal electricity"
+          "description": "Abnormal electricity"
         },
         "lvp": {
           "name": "Arrhythmia",
           "path": "LVP/ArrhythmiaLVP.json",
-          "description": "poor pump pressure"
+          "description": "Poor pump pressure"
         },
         "model": { "name": "ArrythmiaElectricity" }
       }
@@ -152,12 +152,12 @@
         "ecg": {
           "name": "NoFailure",
           "path": "ECG/NormalECG.json",
-          "description": "electrical pulses make the heart muscle contract"
+          "description": "Electrical pulses make the heart muscle contract"
         },
         "lvp": {
           "name": "NoFailure",
           "path": "LVP/NormalLVP.json",
-          "description": "muscle contraction generates pump pressure"
+          "description": "Muscle contraction generates pump pressure"
         },
         "model": { "name": "NoInfarct" }
       },
@@ -171,12 +171,12 @@
         "ecg": {
           "name": "CompensatedFailure",
           "path": "ECG/DiastolicECG_shifted.json",
-          "description": "electrical pulses make the heart muscle contract"
+          "description": "Electrical pulses make the heart muscle contract"
         },
         "lvp": {
           "name": "CompensatedFailure",
           "path": "LVP/DiastolicLVP_shifted.json",
-          "description": "muscle contraction generates pump pressure"
+          "description": "Muscle contraction generates pump pressure"
         },
         "model": { "name": "CompensatedFailure" }
       },
@@ -190,12 +190,12 @@
         "ecg": {
           "name": "DecompensatedFailure",
           "path": "ECG/SystolicECG_shifted.json",
-          "description": "electrical pulses make the heart muscle contract"
+          "description": "Electrical pulses make the heart muscle contract"
         },
         "lvp": {
           "name": "DecompensatedFailure",
           "path": "LVP/SystolicLVP_shifted.json",
-          "description": "thin-walled hearts struggle to maintain pump pressure"
+          "description": "Thin-walled hearts struggle to maintain pump pressure"
         },
         "model": { "name": "DecompensatedFailure" }
       }

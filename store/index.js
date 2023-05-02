@@ -6,6 +6,7 @@ export const state = () => ({
   modelToSceneArray: [],
   isHalfmodel: false,
   heartBeat: 2500,
+  
 });
 
 export const getters = {
