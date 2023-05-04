@@ -66,9 +66,20 @@ export default {
   },
 
   mounted() {
-    this.panelHeight = this.$refs.panel.clientHeight;
+    // this.panelHeight = this.$refs.panel.clientHeight;
     const base_background = this.$refs.base_background.$el;
     const Copper = this.$Copper();
+
+    const updateFullscreen = () => {
+      setTimeout(() => {
+        this.panelHeight = this.$refs.panel.clientHeight;
+      }, 200);
+    };
+
+    document.addEventListener("fullscreenchange", () => {
+      updateFullscreen();
+    });
+
     document.addEventListener("keydown", (e) => {
       if (e.code === "KeyF") {
         Copper.fullScreenListenner(base_background);
