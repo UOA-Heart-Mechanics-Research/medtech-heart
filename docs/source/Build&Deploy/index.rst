@@ -9,3 +9,4 @@ Build & Deploy
     01_netify
     02_github
     03_readthedocs
+    04_deploy_locally

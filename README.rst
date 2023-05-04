@@ -19,6 +19,10 @@ Build Setup
    # generate static project
    $ yarn generate
 
+
+.. include:: example.md
+   :strat-line: 1
+
 For detailed explanation on how things work, check out the
 `documentation`_.
 
