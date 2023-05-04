@@ -56,12 +56,21 @@ export default {
       },
     ],
     script: [
+      // {
+      //   "data-dojo-config": "async: 1, dojoBlankHtmlUrl: '/blank.html'",
+      //   src: "//ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js",
+      // },
+      // {
+      //   src: "https://cdn.tailwindcss.com",
+      // },
       {
-        "data-dojo-config": "async: 1, dojoBlankHtmlUrl: '/blank.html'",
-        src: "//ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js",
+        hid: "chartMaker",
+        type: "text/javascript",
+        src: "js/dojo.js",
       },
       {
-        src: "https://cdn.tailwindcss.com",
+        type: "text/javascript",
+        src: "js/tailwindcss.js",
       },
       {
         hid: "chartMaker",
@@ -94,7 +103,7 @@ export default {
   ],
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/sass/global.scss", "@/assets/sass/base.scss"],
+  css: ["@/assets/sass/global.scss", "@/assets/sass/base.scss","@/assets/css/main.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -168,6 +177,7 @@ export default {
         implementation: require("sass"),
       },
     },
+
   },
 
   target: "static",
