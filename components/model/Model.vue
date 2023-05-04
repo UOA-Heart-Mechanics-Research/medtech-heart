@@ -108,10 +108,12 @@ export default {
     }, 100);
 
     window.addEventListener("resize", () => {
-      this.mdAndUp
-        ? (baseContainer.style.height = "100vh")
-        : (baseContainer.style.height = "100vw");
-      this.scene.onWindowResize();
+      setTimeout(() => {
+        this.mdAndUp
+          ? (baseContainer.style.height = "100vh")
+          : (baseContainer.style.height = "100vw");
+        this.scene.onWindowResize();
+      }, 500);
     });
 
     window.addEventListener(
@@ -184,15 +186,13 @@ export default {
           TWO: this.THREE.TOUCH.DOLLY,
           THREE: this.THREE.TOUCH.PAN,
         };
-        console.log(this.scene.controls.touches);
         this.baseRenderer.setCurrentScene(this.scene);
         this.scene.loadGltf(metaURL, (content) => {
           if (model_name === "ArrythmiaElectricity") {
             this.scene.setModelPosition(content, { x: 5, y: 2 });
           } else {
-            this.scene.setModelPosition(content, { y: 3 });
+            this.scene.setModelPosition(content, { x: -2, y: 3, z: -3 });
           }
-
           if (this.oldCam && this.oldCam.near) {
             this.shareCameraSettings(this.oldCam);
           }

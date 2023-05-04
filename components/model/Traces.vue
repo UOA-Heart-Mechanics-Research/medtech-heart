@@ -20,11 +20,12 @@
         :class="mdAndUp ? 'rightECG-md' : 'rightECG-sm'"
       ></div>
       <div
+        v-html="this.$ecg().description"
         id="ecgDescription"
         class="text-caption text-xl-body-2"
         :class="mdAndUp ? 'graph-text-md' : 'graph-text-sm'"
       >
-        {{ $ecg().description }}
+        <!-- {{ $ecg().description }} -->
       </div>
     </div>
     <!-- mt-4 lg:mt-0 flex flex-col items-center space-y-10 lg:space-y-4 -->
@@ -59,6 +60,7 @@ export default {
       idleTimeLimit: 300000,
       oldTime: new Date(),
       render: undefined,
+      ecgd: "",
     };
   },
   computed: {
@@ -72,7 +74,7 @@ export default {
       window.ecgDone = false; //to prevent unexpected problem of chart being loaded twice
       window.lvpDone = false;
     }
-
+    // this.ecgd = this.$ecg().description
     // These ecgName and lvpName are global variables come from LVPandECG.js to prevent the name undefined issue.
     ecgName = null;
     lvpName = null;
@@ -120,7 +122,7 @@ export default {
 }
 
 .rightECG-sm {
-  width: 40vw;
+  width: 50vw;
   height: 20vw;
   min-height: 80px;
 }
@@ -129,10 +131,17 @@ export default {
   min-height: 150px;
 }
 .graph-text-md {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 15vw;
 }
 .graph-text-sm {
   width: 100vw;
+  p {
+    width: 100%;
+  }
 }
 .graph-comm {
   display: flex;
