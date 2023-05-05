@@ -60,14 +60,16 @@ export default {
       //   "data-dojo-config": "async: 1, dojoBlankHtmlUrl: '/blank.html'",
       //   src: "//ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js",
       // },
-      // {
-      //   src: "https://cdn.tailwindcss.com",
-      // },
       {
-        hid: "chartMaker",
+        "data-dojo-config": "async: 1, dojoBlankHtmlUrl: '/blank.html'",
         type: "text/javascript",
         src: "js/dojo.js",
       },
+      // {
+      //   src: 'dojo-release-1.11.2/dojo/dojo.js',
+      //   async: true,
+      //   defer: true
+      // },
       {
         type: "text/javascript",
         src: "js/tailwindcss.js",
