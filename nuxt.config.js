@@ -1,6 +1,7 @@
 import colors from "vuetify/es5/util/colors";
 const serveStatic = require("serve-static");
 const path = require("path");
+
 const routerBase =
   process.env.DEPLOY_ENV === "GH_PAGES"
     ? {
@@ -56,19 +57,15 @@ export default {
       },
     ],
     script: [
-      // {
-      //   "data-dojo-config": "async: 1, dojoBlankHtmlUrl: '/blank.html'",
-      //   src: "//ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js",
-      // },
       {
         "data-dojo-config": "async: 1, dojoBlankHtmlUrl: '/blank.html'",
-        type: "text/javascript",
-        src: "js/dojo.js",
+        src: "//ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js",
       },
+      // for local
       // {
-      //   src: 'dojo-release-1.11.2/dojo/dojo.js',
-      //   async: true,
-      //   defer: true
+      //   "data-dojo-config": "async: 1, dojoBlankHtmlUrl: '/blank.html'",
+      //   type: "text/javascript",
+      //   src: "js/dojo.js",
       // },
       {
         type: "text/javascript",
