@@ -181,11 +181,6 @@ export default {
         this.scene.controls.staticMoving = true;
         this.scene.controls.rotateSpeed = 2.0;
         this.scene.controls.panSpeed = 3.0;
-        this.scene.controls.touches = {
-          ONE: this.THREE.TOUCH.ROTATE,
-          TWO: this.THREE.TOUCH.DOLLY,
-          THREE: this.THREE.TOUCH.PAN,
-        };
         this.baseRenderer.setCurrentScene(this.scene);
         this.scene.loadGltf(metaURL, (content) => {
           if (model_name === "ArrythmiaElectricity") {
