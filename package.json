@@ -12,7 +12,7 @@
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "dependencies": {
-    "copper3d_visualisation": "^1.14.8",
+    "copper3d": "^1.15.0",
     "core-js": "^3.19.3",
     "marked": "^4.0.11",
     "nuxt": "^2.15.8",

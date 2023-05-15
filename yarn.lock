@@ -1312,10 +1312,15 @@
   resolved "https://registry.npmjs.org/@polka/url/-/url-1.0.0-next.21.tgz"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
+"@tweenjs/tween.js@~18.6.4":
+  version "18.6.4"
+  resolved "https://registry.yarnpkg.com/@tweenjs/tween.js/-/tween.js-18.6.4.tgz#40a3d0a93647124872dec8e0fd1bd5926695b6ca"
+  integrity sha512-lB9lMjuqjtuJrx7/kOkqQBtllspPIN+96OvTCeJ2j5FEzinoAXTdAMFnDAQT1KVPRlnYfBrqxtqP66vDM40xxQ==
+
 "@types/dat.gui@^0.7.9":
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/@types/dat.gui/-/dat.gui-0.7.9.tgz#9e16985a0a6b4ef652c53212ee813e5968aff9a8"
-  integrity sha512-UiqZasQIask5cUwWOO6BgOjP1dNj9ChYtmeAb4WTKs5IJ7ha3ATRTeXY7/TzlmEZznh40lS6Ov5BdNA+tU+fWQ==
+  version "0.7.10"
+  resolved "https://registry.yarnpkg.com/@types/dat.gui/-/dat.gui-0.7.10.tgz#e61b78c06ea5614397e8c2199fd0cd1afcd66675"
+  integrity sha512-sLifoNrvs4lgJkAUZcTB28dbWy0AM05Yc0BzTqHheK0tRYRVsJHoFLocB5heDbb5amaFLEXna41GOM6IG06oqA==
 
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.2"
@@ -1342,15 +1347,26 @@
   resolved "https://registry.npmjs.org/@types/source-list-map/-/source-list-map-0.1.2.tgz"
   integrity sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA==
 
+"@types/stats.js@*":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@types/stats.js/-/stats.js-0.17.0.tgz#0ed81d48e03b590c24da85540c1d952077a9fe20"
+  integrity sha512-9w+a7bR8PeB0dCT/HBULU2fMqf6BAzvKbxFboYhmDtDkKPiyXYbjoe2auwsXlEFI7CFNMF1dCv3dFH5Poy9R1w==
+
 "@types/tapable@^1", "@types/tapable@^1.0.5":
   version "1.0.8"
   resolved "https://registry.npmjs.org/@types/tapable/-/tapable-1.0.8.tgz"
   integrity sha512-ipixuVrh2OdNmauvtT51o3d8z12p6LtFW9in7U79der/kwejjdNchQC5UMn5u/KxNoM7VHHOs/l8KS8uHxhODQ==
 
-"@types/three@^0.140.0":
-  version "0.140.0"
-  resolved "https://registry.npmjs.org/@types/three/-/three-0.140.0.tgz"
-  integrity sha512-YPJLSIY6uKUOp1k6BZYDq5GtEIdhfeK04UCbc9IPAVbdn/RNjkfrbnyd7smrsNkJhc0IFASLpd3AAYgwqgXKVQ==
+"@types/three@^0.152.0":
+  version "0.152.0"
+  resolved "https://registry.yarnpkg.com/@types/three/-/three-0.152.0.tgz#23d8a61461bac007e56dc0c0081fe22ca1e38421"
+  integrity sha512-9QdaV5bfZEqeQi0xkXLdnoJt7lgYZbppdBAgJSWRicdtZoCYJ34nS2QkdeuzXt+UXExofk4OWqMzdX71HeDOVg==
+  dependencies:
+    "@tweenjs/tween.js" "~18.6.4"
+    "@types/stats.js" "*"
+    "@types/webxr" "*"
+    fflate "~0.6.9"
+    lil-gui "~0.17.0"
 
 "@types/uglify-js@*":
   version "3.13.1"
@@ -1379,6 +1395,11 @@
     "@types/webpack-sources" "*"
     anymatch "^3.0.0"
     source-map "^0.6.0"
+
+"@types/webxr@*":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.2.tgz#5d9627b0ffe223aa3b166de7112ac8a9460dc54f"
+  integrity sha512-szL74BnIcok9m7QwYtVmQ+EdIKwbjPANudfuvDrAF8Cljg9MKUlIoc1w5tjj9PMpeSH3U1Xnx//czQybJ0EfSw==
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
@@ -2571,43 +2592,34 @@ cookie@^0.3.1:
   resolved "https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz"
   integrity sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
 
-copper3d_plugin_heart_k@^1.0.14:
-  version "1.0.14"
-  resolved "https://registry.npmjs.org/copper3d_plugin_heart_k/-/copper3d_plugin_heart_k-1.0.14.tgz"
-  integrity sha512-SGujw/TgjjGQnitykUQpesrpfOlUPKLhxnFXRWmFjJRtpelk16yek7eBEXYG5xr293enO48Fjbn2F+eFLPDNGA==
-  dependencies:
-    copper3d_plugin_heartjs_config "^1.0.7"
-    jsfft "0.0.4"
-
-copper3d_plugin_heartjs_config@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.npmjs.org/copper3d_plugin_heartjs_config/-/copper3d_plugin_heartjs_config-1.0.7.tgz"
-  integrity sha512-rWhe19DQjC7Ap96uPKmQNy+IBihXTHelAowr5VdgHee+LDTLTLJ75IHsbBxi5ls1LHMxsXhGmWmT3Oy+pgva+Q==
-
-copper3d_plugin_nrrd@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/copper3d_plugin_nrrd/-/copper3d_plugin_nrrd-1.3.2.tgz#f4954197636ff879df87ea8f43bcfce801ac4778"
-  integrity sha512-vP1rDEDZZWRQGnDfV80Ok/A1WfwLD+04N9az7PE/DRoBiOBEW3ByoLUrrK1Gxsq1Tgt8+uFAavxqynE4u697Qw==
-  dependencies:
-    fflate "^0.7.4"
-    three "^0.148.0"
-
-copper3d_visualisation@^1.14.8:
-  version "1.14.8"
-  resolved "https://registry.yarnpkg.com/copper3d_visualisation/-/copper3d_visualisation-1.14.8.tgz#51724b06ad8eb8533d67714849483767e66e4c5e"
-  integrity sha512-Nf7cIDR5NI+TH1z+iJQBCyoNfsWTdkMsFk+/DAf31++7QxAXBYAM/LIkeSrBmfY3sxEF/D0NAC4NLLUcEMkdaQ==
+copper3d@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/copper3d/-/copper3d-1.15.0.tgz#31fb4381c516c55d4c88e0d2fd0b5167eae2f8e6"
+  integrity sha512-QrqAbY+9eG7ERrAWRXS8aEwc+2SCRm4H527G/0DAgUVIInQb6UwL8fmsF82p5GTa19J6P+PWhSJTIeGhOFFAPw==
   dependencies:
     "@types/dat.gui" "^0.7.9"
-    "@types/three" "^0.140.0"
+    "@types/three" "^0.152.0"
     copper3d_plugin_heart_k "^1.0.14"
-    copper3d_plugin_nrrd "^1.3.2"
     dat.gui "^0.7.9"
     dicom-parser "^1.8.13"
     fflate "^0.7.3"
     file-saver "^2.0.5"
     glsl-blend-soft-light "^1.0.5"
     glsl-film-grain "^1.0.4"
-    three "^0.150.1"
+    three "^0.152.2"
+
+copper3d_plugin_heart_k@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/copper3d_plugin_heart_k/-/copper3d_plugin_heart_k-1.0.14.tgz#f08faa05a7a7af3a98d92c40a91e588d06cd7f87"
+  integrity sha512-SGujw/TgjjGQnitykUQpesrpfOlUPKLhxnFXRWmFjJRtpelk16yek7eBEXYG5xr293enO48Fjbn2F+eFLPDNGA==
+  dependencies:
+    copper3d_plugin_heartjs_config "^1.0.7"
+    jsfft "0.0.4"
+
+copper3d_plugin_heartjs_config@^1.0.7:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/copper3d_plugin_heartjs_config/-/copper3d_plugin_heartjs_config-1.0.8.tgz#0d568d08a496c4615e54ee052235eed671bd4f3f"
+  integrity sha512-61YecSdgG7/0En9Bt7eclCOUfdunJOxVM/QfG0wQqy2+sqUtWGiWvGhL3KcFnlycJ+fQFn+uDdGTwiyFOMlzHQ==
 
 copy-concurrently@^1.0.0:
   version "1.0.5"
@@ -2935,7 +2947,7 @@ cyclist@^1.0.1:
 
 dat.gui@^0.7.9:
   version "0.7.9"
-  resolved "https://registry.npmjs.org/dat.gui/-/dat.gui-0.7.9.tgz"
+  resolved "https://registry.yarnpkg.com/dat.gui/-/dat.gui-0.7.9.tgz#860cab06053b028e327820eabdf25a13cf07b17e"
   integrity sha512-sCNc1OHobc+Erc1HqiswYgHdVNpSJUlk/Hz8vzOCsER7rl+oF/4+v8GXFUyCgtXpoCX6+bnmg07DedLvBLwYKQ==
 
 de-indent@^1.0.2:
@@ -3482,10 +3494,15 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-fflate@^0.7.3, fflate@^0.7.4:
+fflate@^0.7.3:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/fflate/-/fflate-0.7.4.tgz#61587e5d958fdabb5a9368a302c25363f4f69f50"
   integrity sha512-5u2V/CDW15QM1XbbgS+0DfPxVB+jUKhWEKuuFuHncbk3tEEqzmoXL+2KyOFuKGqOnmdIy0/davWF1CkuwtibCw==
+
+fflate@~0.6.9:
+  version "0.6.10"
+  resolved "https://registry.yarnpkg.com/fflate/-/fflate-0.6.10.tgz#5f40f9659205936a2d18abf88b2e7781662b6d43"
+  integrity sha512-IQrh3lEPM93wVCEczc9SaAOvkmcoQn/G8Bo1e8ZPlY3X3bnAxWaBdvTdvM1hP62iZp0BXWDy4vTAy4fF0+Dlpg==
 
 figgy-pudding@^3.5.1:
   version "3.5.2"
@@ -3802,19 +3819,19 @@ globby@^11.0.3, globby@^11.0.4:
 
 glsl-blend-soft-light@^1.0.5:
   version "1.0.5"
-  resolved "https://registry.npmjs.org/glsl-blend-soft-light/-/glsl-blend-soft-light-1.0.5.tgz"
+  resolved "https://registry.yarnpkg.com/glsl-blend-soft-light/-/glsl-blend-soft-light-1.0.5.tgz#f5306c622599ee8e7a4fb248795434893cd6c25b"
   integrity sha512-p/XCcc/EYpG+lXHyV4JCiRucCQDiTbqIBrWs/jB5SEUD7MgGgCtcWQKg/Yea9fmKCMEiqLKer1fm2A0RYVeo3A==
 
 glsl-film-grain@^1.0.4:
   version "1.0.4"
-  resolved "https://registry.npmjs.org/glsl-film-grain/-/glsl-film-grain-1.0.4.tgz"
+  resolved "https://registry.yarnpkg.com/glsl-film-grain/-/glsl-film-grain-1.0.4.tgz#66a9a98f3fda72d295ed1049e61c5a0b42a3fb9e"
   integrity sha512-LQf7un13hr0g+apnLo7G50hGfzbAd+Hpiv5nWJlh8CUl7r+UuIaFAJ4wUthsXSGfVdn+QLldY4KUoJyrLEOJAw==
   dependencies:
     glsl-noise "0.0.0"
 
 glsl-noise@0.0.0:
   version "0.0.0"
-  resolved "https://registry.npmjs.org/glsl-noise/-/glsl-noise-0.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/glsl-noise/-/glsl-noise-0.0.0.tgz#367745f3a33382c0eeec4cb54b7e99cfc1d7670b"
   integrity sha512-b/ZCF6amfAUb7dJM/MxRs7AetQEahYzJ8PtgfrmEdtw6uyGOr+ZSGtgjFm6mfsBkxJ4d2W7kg+Nlqzqvn3Bc0w==
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4:
@@ -4567,7 +4584,7 @@ jsesc@~0.5.0:
 
 jsfft@0.0.4:
   version "0.0.4"
-  resolved "https://registry.npmjs.org/jsfft/-/jsfft-0.0.4.tgz"
+  resolved "https://registry.yarnpkg.com/jsfft/-/jsfft-0.0.4.tgz#779f1d4e87b7da3aad51027b8081d34235660e7f"
   integrity sha512-INIqKIPQSwN63QcUNzj8Tkf/Vlzf+GohQXUxt41xNxnQFczPB3gCzfZEg9jzBodRpaaIUpdea2Eu5D3CpsF3FQ==
 
 json-parse-better-errors@^1.0.1, json-parse-better-errors@^1.0.2:
@@ -4661,6 +4678,11 @@ launch-editor@^2.3.0:
   dependencies:
     picocolors "^1.0.0"
     shell-quote "^1.6.1"
+
+lil-gui@~0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/lil-gui/-/lil-gui-0.17.0.tgz#b41ae55d0023fcd9185f7395a218db0f58189663"
+  integrity sha512-MVBHmgY+uEbmJNApAaPbtvNh1RCAeMnKym82SBjtp5rODTYKWtM+MXHCifLe2H2Ti1HuBGBtK/5SyG4ShQ3pUQ==
 
 loader-runner@^2.4.0:
   version "2.4.0"
@@ -7486,15 +7508,10 @@ three@^0.137.5:
   resolved "https://registry.npmjs.org/three/-/three-0.137.5.tgz"
   integrity sha512-rTyr+HDFxjnN8+N/guZjDgfVxgHptZQpf6xfL/Mo7a5JYIFwK6tAq3bzxYYB4Ae0RosDZlDuP+X5aXDXz+XnHQ==
 
-three@^0.148.0:
-  version "0.148.0"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.148.0.tgz#b6f62f9c84227f8d51c151bf17b67984ded8e4d7"
-  integrity sha512-8uzVV+qhTPi0bOFs/3te3RW6hb3urL8jYEl6irjCWo/l6sr8MPNMcClFev/MMYeIxr0gmDcoXTy/8LXh/LXkfw==
-
-three@^0.150.1:
-  version "0.150.1"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.150.1.tgz#870d324a4d2daf1c7d55be97f3f73d83783e28be"
-  integrity sha512-5C1MqKUWaHYo13BX0Q64qcdwImgnnjSOFgBscOzAo8MYCzEtqfQqorEKMcajnA3FHy1yVlIe9AmaMQ0OQracNA==
+three@^0.152.2:
+  version "0.152.2"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.152.2.tgz#2ee0f2c504d31a4bc29b45495c12bded9fda7bfc"
+  integrity sha512-Ff9zIpSfkkqcBcpdiFo2f35vA9ZucO+N8TNacJOqaEE6DrB0eufItVMib8bK8Pcju/ZNT6a7blE1GhTpkdsILw==
 
 through2@^2.0.0:
   version "2.0.5"
