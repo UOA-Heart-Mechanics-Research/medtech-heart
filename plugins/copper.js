@@ -12,7 +12,8 @@ const baseRenderer = new Copper.copperRenderer(container, {
   guiOpen,
   camera: true,
   performance: true,
-  light: true,
+  light: false,
+  controls: "copper3d",
 });
 if (guiOpen) baseRenderer.gui.closed = true;
 baseRenderer.animate();
