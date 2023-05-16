@@ -116,33 +116,33 @@ export default {
       }, 500);
     });
 
-    window.addEventListener(
-      "touchstart",
-      (event) => {
-        event.preventDefault();
-        event.stopPropagation();
-        var len = event.touches.length;
-        if (len === 3) {
-          this.scene.controls.noZoom = true;
-          this.scene.controls.noRotate = true;
-          this.scene.controls.staticMoving = false;
-          this.scene.controls.panSpeed = 1.0;
-        }
-      },
-      false
-    );
-    window.addEventListener(
-      "touchend",
-      () => {
-        this.scene.controls.staticMoving = true;
-        this.scene.controls.panSpeed = 3.0;
-        setTimeout(() => {
-          this.scene.controls.noZoom = false;
-          this.scene.controls.noRotate = false;
-        }, 100);
-      },
-      false
-    );
+    // window.addEventListener(
+    //   "touchstart",
+    //   (event) => {
+    //     event.preventDefault();
+    //     event.stopPropagation();
+    //     var len = event.touches.length;
+    //     if (len === 3) {
+    //       this.scene.controls.noZoom = true;
+    //       this.scene.controls.noRotate = true;
+    //       this.scene.controls.staticMoving = false;
+    //       this.scene.controls.panSpeed = 1.0;
+    //     }
+    //   },
+    //   false
+    // );
+    // window.addEventListener(
+    //   "touchend",
+    //   () => {
+    //     this.scene.controls.staticMoving = true;
+    //     this.scene.controls.panSpeed = 3.0;
+    //     setTimeout(() => {
+    //       this.scene.controls.noZoom = false;
+    //       this.scene.controls.noRotate = false;
+    //     }, 100);
+    //   },
+    //   false
+    // );
   },
 
   methods: {
