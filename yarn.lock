@@ -2592,10 +2592,10 @@ cookie@^0.3.1:
   resolved "https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz"
   integrity sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
 
-copper3d@^1.15.7:
-  version "1.15.7"
-  resolved "https://registry.yarnpkg.com/copper3d/-/copper3d-1.15.7.tgz#d59285086697f0c5ea51faf674c4783c9f5cfc94"
-  integrity sha512-wdxBjCmEif1MLU18x34krdtUcGidQ0ToU3ItybSATaHBMId8AfNPYeejnrcuncrq71WIxwuEOwCPmd3SpM53GQ==
+copper3d@^1.15.9:
+  version "1.15.9"
+  resolved "https://registry.yarnpkg.com/copper3d/-/copper3d-1.15.9.tgz#cbbedaad11ca270634b28fbceaf5f1e1d96978a8"
+  integrity sha512-OtZi+RQ7+7hyjYqrl+jNyJMxTRYVcFnEaTkV2JSpi9/9ApI8EKtLfPXRGUsNKyMYCT27NkCm40amQd4BLoy0fQ==
   dependencies:
     "@types/dat.gui" "^0.7.9"
     "@types/three" "^0.152.0"
