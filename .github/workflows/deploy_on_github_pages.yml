@@ -17,6 +17,7 @@ jobs:
       - run: yarn generate:gh-pages
       - run: cp -rf build/kiwrious-config build/_nuxt/kiwrious-config
       - run: cp -rf googled1d17d6f9157174f.html build/googled1d17d6f9157174f.html
+      - run: cp -rf sitemap.xml build/sitemap.xml
 
       - uses: actions/checkout@v3
         with:
