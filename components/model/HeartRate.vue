@@ -86,14 +86,27 @@ export default {
 
         this.kiwriousValue.innerText = status;
 
-        if (status === "Ready") {
+        if (status === "Ready" || status === "Calculating") {
           this.count = this.count + 1;
+        
+          
 
           if (hrVal > 160 || hrVal < 0) {
             this.kiwriousValue.innerText = "Your heartrate is: NaN";
+          } else if (hrVal === 0) {
+            this.modulo = (this.count % 4);
+            if (this.modulo === 0) {
+              this.kiwriousValue.innerText = "Calculating";
+            } else if (this.modulo === 1) {
+              this.kiwriousValue.innerText = "Calculating.";
+            } else if (this.modulo === 2) {
+              this.kiwriousValue.innerText = "Calculating..";
+            } else if (this.modulo === 3) {
+              this.kiwriousValue.innerText = "Calculating...";
+            }
+
           } else {
-            this.kiwriousValue.innerText =
-              "Your heartrate is: " + hrVal.toString();
+            this.kiwriousValue.innerText = "Your heartrate is: " + hrVal.toString();
             if (this.count >= 3) {
               const normalHrVal = hrVal * (5000 / 160);
               this.beat = normalHrVal;
