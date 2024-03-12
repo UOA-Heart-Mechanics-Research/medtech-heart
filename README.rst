@@ -19,6 +19,23 @@ Build Setup
    # generate static project
    $ yarn generate
 
+Docker setup
+-------------
+
+- Important: Make sure you have docker and docker-compose installed.
+
+- Run docker via command line:
+
+.. code:: bash
+
+   cd medtech-heart
+   docker-compose up
+
+- Or Double-Click docker-start.bat for Windows users.
+- After running in the docker component, go `http://localhost:5173/`.
+- If the website is black, then refresh the broswer.
+
+
 
 .. include:: example.md
    :strat-line: 1
