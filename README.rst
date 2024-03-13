@@ -36,6 +36,8 @@ Docker setup
 - If the website is black, then refresh the broswer.
 
 
+Nuxt Project
+-------------
 
 .. include:: example.md
    :strat-line: 1
