@@ -19,22 +19,31 @@ Build Setup
    # generate static project
    $ yarn generate
 
-Docker setup
+Quick start up
 -------------
 
-- Important: Make sure you have docker and docker-compose installed.
+- Via docker
+   - Important: Make sure you have docker and docker-compose installed, and the docker engine is running.
+   - Clone/download the project to desktop, 
+      - In the project root folder, there is a docker-start.bat file, double-click it, it will automatically run the heart app in docker container and open the chrome browser.
+         - (if there is no heart app image in docker, it will automatically build a docker image and run the container, usually happens on first time, may take 1~2 minutes. If there is a heart app image, it will run the app in a docker container, may take around 30s)
+         - if sometime the browser is blank, just refresh the browser the app will appear. : )
+   - Run docker via command line:
 
-- Run docker via command line:
+   .. code:: bash
 
-.. code:: bash
+      cd medtech-heart
+      docker-compose up
 
-   cd medtech-heart
-   docker-compose up
+   - After running in the docker container, go `http://localhost:5173/`.
+   - If the website is black, then refresh the broswer.
 
-- Or Double-Click docker-start.bat for Windows users.
-- After running in the docker component, go `http://localhost:5173/`.
-- If the website is black, then refresh the broswer.
-
+- Via nodejs environment
+   - make sure the nodejs (version 16.14.0) and yarn are globally installed in the machine.
+   - Clone/download the project to desktop, 
+      - In the project root folder, there is a local_setup_start.bat file, double-click it,
+         - It will automatically install all dependencies,
+         - and open the chrome browser, waiting 30s~1min, the app will show in the browser. 
 
 Nuxt Project
 -------------
