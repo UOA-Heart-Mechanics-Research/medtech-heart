@@ -1,17 +1,17 @@
 FROM node:16-alpine
 
-MAINTAINER LinkunGao<lgao142@aucklanduni.ac.nz>
-
 WORKDIR /app
 
 COPY . .
 
-RUN yarn
+RUN yarn \
+    && yarn generate \
+    && cp -rf build/kiwrious-config build/_nuxt/kiwrious-config
 
 ENV HOST 0.0.0.0
 
-ENV PORT 5173
+ENV PORT 3000
 
-EXPOSE 5173
+EXPOSE 3000
 
-CMD ["yarn", "dev"]
+CMD ["yarn", "start"]
