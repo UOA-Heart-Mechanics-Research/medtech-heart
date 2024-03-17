@@ -6,8 +6,9 @@ cls
 type logo.txt
 echo Starting Medtech Heart App locally version...
 
+start ""  yarn install && yarn dev
+
+timeout /t 5 /nobreak
 start "" "chrome.exe" "--start-fullscreen" "http://localhost:3000/model-heart"
 
-yarn install && yarn dev
 
-pause
