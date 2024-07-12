@@ -12,6 +12,7 @@
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^3.3.5",
     "copper3d": "^1.15.11",
     "core-js": "^3.19.3",
     "marked": "^4.0.11",

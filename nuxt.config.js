@@ -129,7 +129,16 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
+    "@nuxtjs/pwa"
   ],
+  pwa: {
+    manifest: {
+      name: 'MedTech Heart',
+      short_name: 'MedTech Heart',
+      description: 'An ABI Education App for Cardiology.',
+      theme_color: '#000',
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
